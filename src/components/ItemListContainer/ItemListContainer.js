@@ -1,4 +1,5 @@
 import Itemcount from "../ItemCount/ItemCount";
+
 function ItemListContainer({ greeting }) {
   return (
     <div className="ItemListContainer">
@@ -10,7 +11,7 @@ function ItemListContainer({ greeting }) {
           precio="$10000"
           initial={1}
           stock={10}
-          onAdd={(quantity) => console.log('cantidad de productos', quantity)}
+          onAdd={(quantity) => console.log("cantidad de productos", quantity)}
         />
         {/* <Itemcount
           imagen="https://bellkys.com.ar/wp-content/uploads/2023/04/DSC02521.jpeg"
