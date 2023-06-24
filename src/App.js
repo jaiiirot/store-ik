@@ -1,12 +1,13 @@
-import logo from "./img/noaN.png";
+// import logo from "./img/noaN.png";
 import './style/App.css';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import Navbar from "./components/NavBar/Navbar";
 
 function App() {
+  const logo = "IK";
   return (
     <div className="App">
-      <Navbar imgLogo={logo}/>
+      <Navbar logo={logo}/>
       <ItemListContainer greeting='Bienvenido'/>
     </div>
   );

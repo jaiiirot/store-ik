@@ -14,11 +14,11 @@ function ItemCount({ imagen, titulo, precio, initial, stock, onAdd }) {
         <img src={imagen} />
       </div>
       <div className="ItemCount__informacion">
-        <h2>{titulo}</h2>
-        <h4>{precio}</h4>
+        <h4>{titulo}</h4>
+        <p>{precio}</p>
       </div>
       <div className="ItemCount__boton">
-        <div>
+{/*         <div>
           <button className="btn-rojo" onClick={decrement}>
             -
           </button>
@@ -26,7 +26,7 @@ function ItemCount({ imagen, titulo, precio, initial, stock, onAdd }) {
           <button className="btn-verde" onClick={increment}>
             +
           </button>
-        </div>
+        </div> */}
         <button
           className="btn-gris"
           onClick={() => onAdd(quantity)}
