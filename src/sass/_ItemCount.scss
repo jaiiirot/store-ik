@@ -1,14 +1,17 @@
 .ItemCount {
   position: relative;
-  border-radius: 0px 1rem 0px 1rem;
+  border-radius: 0px 1.5rem 0px 1.5rem;
   width: 100%;
   background: $azure-web;
   text-align: center;
   padding: 10px;
+  height: min-content;
   &__options {
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
     button{
       background: none;
       border: 0;
@@ -34,7 +37,7 @@
   }
   &__img {
     width: 100%;
-    height: 250px;
+    height: initial;
     overflow: hidden;
     img {
       width: 100%;

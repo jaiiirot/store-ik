@@ -34,9 +34,11 @@ body{
 }
 /* NabVar */
 @import "./NavBar";
+/* BodyContainer */
+@import './BodyContainer';
+/* ItemSliderContainer */
+@import './ItemSliderContainer';
 /* ItemListContainer */
 @import "./ItemListContainer";
 /* ItemCount */
 @import "./ItemCount";
-/* ItemSlider */
-@import "./ItemSlider";

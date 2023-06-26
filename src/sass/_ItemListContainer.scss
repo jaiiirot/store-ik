@@ -1,11 +1,11 @@
 .ItemListContainer {
-    margin: 5rem 0px 0px;
-    width: 80%;
+    margin: 1rem 0px 0px;
+    width: 100%;
     padding: 1rem;
     color: #000;
     &__cards {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1rem;   
+      grid-template-columns: repeat(6, 1fr);
+      gap: .5rem;
     }
   }

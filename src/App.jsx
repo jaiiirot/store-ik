@@ -1,14 +1,15 @@
 // import logo from "./img/noaN.png";
-import './style/App.css';
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import "./style/App.css";
 import Navbar from "./components/Navbar/Navbar";
+// import BodyContainer from "./components/BodyContainer/BodyContainer";
+import BodyContainer from "./components/BodyContainer/BodyContainer";
 
 function App() {
-  const logo = "IK";
   return (
     <div className="App">
-      <Navbar logo={logo}/>
-      <ItemListContainer />
+      <Navbar />
+      <BodyContainer />
+      {/* <BodyContainer /> */}
     </div>
   );
 }

@@ -4,7 +4,7 @@ function OptionsWidget() {
       <li>
         ¡ Novedades !
         <hr />
-        <span></span>
+        <span style={{ display: "block", width: "100%" }}></span>
       </li>
       <li>
         Tienda
