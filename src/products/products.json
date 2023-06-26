@@ -1,0 +1,770 @@
+[
+    {
+        "id": 1,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/lulati-31-0af06471a93e78ce9e16874556599813-480-0.webp",
+        "nombre": "Media Polera pesada Lulati",
+        "precio": "$3.990"
+    },
+    {
+        "id": 2,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/rajel-11-d0107c0081a830b9d216874421560335-480-0.webp",
+        "nombre": "Sweater Lanilla Brush Oversize escote V, tajo y sisa baja RAJEL",
+        "precio": "$4.790"
+    },
+    {
+        "id": 3,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/bluebell-lanlla-41-1810c16086b27b32fc16874407698971-480-0.webp",
+        "nombre": "Sweater un hombro lanilla gruesa premium con frunces y manga globo Bluebell",
+        "precio": "$3.690"
+    },
+    {
+        "id": 4,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/french-41-8bdc191fcb99bdbfda16874402526744-480-0.webp",
+        "nombre": "Media polera lanilla brush con cartera en hombros French",
+        "precio": "$3.990"
+    },
+    {
+        "id": 5,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/odesa-11-206eaf13414a0efa8616873588630314-480-0.webp",
+        "nombre": "Polera combinada manga campana Odesa",
+        "precio": "$8.290"
+    },
+    {
+        "id": 6,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/rieka-21-b8e26d767690a91f0e16873533610619-480-0.webp",
+        "nombre": "Media polera lanilla gruesa premium con volados en mangas y cuerpo Rieka",
+        "precio": "$3.990"
+    },
+    {
+        "id": 7,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/bethany-41-40e131ebab4abefee416873523929804-480-0.webp",
+        "nombre": "Sweater punto morley con manga globo Bethany",
+        "precio": "$5.490"
+    },
+    {
+        "id": 8,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/amberley1-88cb5c6b232487c02d16873521912165-480-0.webp",
+        "nombre": "Sweater escote V corto manga globo Amberley",
+        "precio": "$4.490"
+    },
+    {
+        "id": 9,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/didda-21-2605a3cfa22112d21b16873508574996-480-0.webp",
+        "nombre": "Polera a la cintura con trenzas horizontales Didda",
+        "precio": "$5.290"
+    },
+    {
+        "id": 10,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/lombardia-14-fbfbe76038104bd80716868364221386-480-0.webp",
+        "nombre": "Polera manga globo con punto de zig zag en mangas Lombardia",
+        "precio": "$5.990"
+    },
+    {
+        "id": 11,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/meryl-polera-trenzada-21-c1c7c4523ffd6b08f016867661457525-480-0.webp",
+        "nombre": "Media polera trenzada Meryl",
+        "precio": "$4.290"
+    },
+    {
+        "id": 12,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/surinam-11-f32b44669968c5275816867658803260-480-0.webp",
+        "nombre": "Polera con dibujos Surinam",
+        "precio": "$5.290"
+    },
+    {
+        "id": 13,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/pacific-11-eca4a28a0ce599ad8516867589574590-480-0.webp",
+        "nombre": "Saco rayado con botones Pacific",
+        "precio": "$5.990"
+    },
+    {
+        "id": 14,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/roslyn-11-a83e545cfe910a1f1116867470471181-480-0.webp",
+        "nombre": "Sweater rayado con figuras y colores Roslyn",
+        "precio": "$6.290"
+    },
+    {
+        "id": 15,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/elsa-aspen-31-6405c8b2f42430ab7f16867463167222-480-0.webp",
+        "nombre": "Media polera lanilla aspen manga princesa Elsa",
+        "precio": "$6.290"
+    },
+    {
+        "id": 16,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/rembrandt-11-14ece15dfdc14219f916866800768626-480-0.webp",
+        "nombre": "Media polera pesada manga campana Rembrandt",
+        "precio": "$5.490"
+    },
+    {
+        "id": 17,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/guaguin-141-fc5ec95cdc9fee571c16866770579924-480-0.webp",
+        "nombre": "Polera larga pesada full trenzas Gaguin",
+        "precio": "$7.790"
+    },
+    {
+        "id": 18,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/scarlett-chaleco-11-f24265c8480fc23aa816866710961276-480-0.webp",
+        "nombre": "Chaleco Oversize Scarlett",
+        "precio": "$3.290"
+    },
+    {
+        "id": 19,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/img_11761-97b5e6abe0bdeb45f416866689085469-480-0.webp",
+        "nombre": "Sweater oversize manga globo Adelaide",
+        "precio": "$5.990"
+    },
+    {
+        "id": 20,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/dalia-41-c8c8e10e235a8a04c516866675722032-480-0.webp",
+        "nombre": "Sweater doble trenza Dalia",
+        "precio": "$4.290"
+    },
+    {
+        "id": 21,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/birmingham-11-4b78e790c7221c60b416869249763969-480-0.webp",
+        "nombre": "Saco abierto largo con trenzas Birmingham",
+        "precio": "$5.490"
+    },
+    {
+        "id": 22,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/img_06201-04cc96405f1f302f7316865989135186-480-0.webp",
+        "nombre": "Media polera con trenzas y rombos Perth",
+        "precio": "$4.990"
+    },
+    {
+        "id": 23,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/ambrose-21-2abb02f2291830282d16865910941528-480-0.webp",
+        "nombre": "Sweater ancho escote V calado con tajo Ambrose",
+        "precio": "$5.290"
+    },
+    {
+        "id": 24,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/reggina-13-8ac431596db74e96f616865714857062-480-0.webp",
+        "nombre": "Poleron largo Reggina",
+        "precio": "$8.190"
+    },
+    {
+        "id": 25,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/nuno-101-8020c89c7ad2c36ac716861458280407-480-0.webp",
+        "nombre": "Saco corto con borde trenzado Nuno",
+        "precio": "$5.990"
+    },
+    {
+        "id": 26,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/portman-711-9b2ff671b19655d14716861454725113-480-0.webp",
+        "nombre": "Sweater oversize rayado Portman",
+        "precio": "$7.790"
+    },
+    {
+        "id": 27,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/orleans-21-6609b3aac504cce52e16861423252929-480-0.webp",
+        "nombre": "Sweater calado pecho Orleans",
+        "precio": "$4.990"
+    },
+    {
+        "id": 28,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/nistelroy-21-14df54f2894303a2c616860731454640-480-0.webp",
+        "nombre": "Polera larga con tajos Nistelrooy",
+        "precio": "$5.490"
+    },
+    {
+        "id": 29,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/beckham-71-21b214f4ea69cd614116859872907542-480-0.webp",
+        "nombre": "Media polera amplia rayada Beckham",
+        "precio": "$4.990"
+    },
+    {
+        "id": 30,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/lilard-12-99b27a216ec4bebb5616859870761909-480-0.webp",
+        "nombre": "Sweater con puño ancho y ajustado Lilard",
+        "precio": "$5.290"
+    },
+    {
+        "id": 31,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/perry-51-6fd6674a7dd2b92ca816859832392788-480-0.webp",
+        "nombre": "Sweater jacquard escote V Perry",
+        "precio": "$5.690"
+    },
+    {
+        "id": 32,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/yangtse1-3bec5d1fe782ba723e16857263102543-480-0.webp",
+        "nombre": "Chaleco escote \"V\" Yangste",
+        "precio": "$4.990"
+    },
+    {
+        "id": 33,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/dakar-141-945e5a239c61d73fc816857158104913-480-0.webp",
+        "nombre": "Polera trenzada Dakar",
+        "precio": "$5.990"
+    },
+    {
+        "id": 34,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/cruise1-05293c188d4eb95e3816866769446847-480-0.webp",
+        "nombre": "Sweater trenzado Cruise",
+        "precio": "$4.990"
+    },
+    {
+        "id": 35,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/wisconsin-sweater-11-9b9ef9fe7d1342be1716857138869813-480-0.webp",
+        "nombre": "Sweater trenzado Wisconsin",
+        "precio": "$5.490"
+    },
+    {
+        "id": 36,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/noelle-14-da0fd6156217491d1416856341834543-480-0.webp",
+        "nombre": "Polera calada oversize con figuras Noelle",
+        "precio": "$7.946"
+    },
+    {
+        "id": 37,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/bullok-polera-21-9a0ef458cfd95b458516855590573754-480-0.webp",
+        "nombre": "Polera manga campana Bullock",
+        "precio": "$6.870"
+    },
+    {
+        "id": 38,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/monet-21-8b5c4ea654cc904eab16855556132752-480-0.webp",
+        "nombre": "Polera trenzada combinada Monet",
+        "precio": "$5.990"
+    },
+    {
+        "id": 39,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/larissa-21-1e9853896ee282ab9b16855530687580-480-0.webp",
+        "nombre": "Sweater trenzado Larisa",
+        "precio": "$4.990"
+    },
+    {
+        "id": 40,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/abrezzo-sweater-41-99eee6752365bf4ca416855503853976-480-0.webp",
+        "nombre": "Sweater cuello redondo trenzado Abruzzo",
+        "precio": "$4.290"
+    },
+    {
+        "id": 41,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/marsella-51-eaa9fc219749b502a116855502531845-480-0.webp",
+        "nombre": "Sweater Jacquard Cebra Marsella",
+        "precio": "$4.990"
+    },
+    {
+        "id": 42,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/napoles-11-fe854a0d2117c27df216855446332959-480-0.webp",
+        "nombre": "Polerón con tajo mas largo atrás Napmos",
+        "precio": "$5.990"
+    },
+    {
+        "id": 43,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/westbury-41-426328bd7b6db3d2b116853789615452-480-0.webp",
+        "nombre": "Media polera combinada Westbury",
+        "precio": "$6.346"
+    },
+    {
+        "id": 44,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/oksana-12-68fa37118b77b1c34316847170979697-480-0.webp",
+        "nombre": "Poleron largo con trenzas y aran en centro Oksana",
+        "precio": "$7.796"
+    },
+    {
+        "id": 45,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/belrose-11-fb7e7137a7cd25093116847165870309-480-0.webp",
+        "nombre": "Polera lanilla brush con recorte tipo corset Bellrose",
+        "precio": "$5.490"
+    },
+    {
+        "id": 46,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/valley-11-a933007db8ecf02b3616842665382790-480-0.webp",
+        "nombre": "Saco jacquard corazones Valley",
+        "precio": "$6.990"
+    },
+    {
+        "id": 47,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/oyster-11-f486007da8471ead5f16842653876634-480-0.webp",
+        "nombre": "Sweater jacquard Oyster",
+        "precio": "$5.990"
+    },
+    {
+        "id": 48,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/seul-71-943795b26991fbbdba16842648759598-480-0.webp",
+        "nombre": "Chaleco trenzado Busan",
+        "precio": "$2.690"
+    },
+    {
+        "id": 49,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/fremont-11-3945fba5858033e40916842630145772-480-0.webp",
+        "nombre": "Poleron perle Fremont",
+        "precio": "$7.726"
+    },
+    {
+        "id": 50,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/atlantic-11-4ba61384b291229cb016842619539285-480-0.webp",
+        "nombre": "Saco figuras con botones Atlantic",
+        "precio": "$7.716"
+    },
+    {
+        "id": 51,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/krefeld-21-b2d87bfb9e73116e6e16838148537149-480-0.webp",
+        "nombre": "Chaleco tejido Krefblanc",
+        "precio": "$1.990"
+    },
+    {
+        "id": 52,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/paulina-12-78c2e3fe24ead68d6f16832285515993-480-0.webp",
+        "nombre": "Poleron largo rombos y trenzas Paulina",
+        "precio": "$7.990"
+    },
+    {
+        "id": 53,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/sylvie-13-e5686ceaf0d5e690a816830456629961-480-0.webp",
+        "nombre": "Sweater oversize escote en V y trenzas Silvie",
+        "precio": "$7.286"
+    },
+    {
+        "id": 54,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/clermont-11-3ab78cd085d3d6e92c16830404293908-480-0.webp",
+        "nombre": "Media polera con trenzas y ochos Clermont",
+        "precio": "$7.366"
+    },
+    {
+        "id": 55,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/tassia-211-f69b82ef52db53611516826229181444-480-0.webp",
+        "nombre": "Media polera brush con cierre delantero Tassia",
+        "precio": "$6.990"
+    },
+    {
+        "id": 56,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/linette-12-e9e730f43c8d688eb416823497441995-480-0.webp",
+        "nombre": "Polera mitad trenzas gruesas, mitad trenzas finas Linette",
+        "precio": "$6.990"
+    },
+    {
+        "id": 57,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/arinka-211-af84e5b18afe6d3fa316869246019697-480-0.webp",
+        "nombre": "Polerón largo con bastones anchos y trenzas Arinka",
+        "precio": "$7.286"
+    },
+    {
+        "id": 58,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/troyes-11-4fd97e645a4d210fe016819313867021-480-0.webp",
+        "nombre": "Poleron pesado con puño largo y trenzas Troyes",
+        "precio": "$7.990"
+    },
+    {
+        "id": 59,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/baxter-11-b3a55c58b4f4d0241316819270580780-480-0.webp",
+        "nombre": "Saco manga globo trenzado Baxter",
+        "precio": "$5.990"
+    },
+    {
+        "id": 60,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/rennes-11-169390b8f30980fa2f16811468094822-480-0.webp",
+        "nombre": "Polera oversize punto morley con manga amplia Rennes",
+        "precio": "$7.270"
+    },
+    {
+        "id": 61,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/jelena-21-5802df105020180b4516811466468048-480-0.webp",
+        "nombre": "Polera punto morley horizontal y trenzas en laterales Jelena",
+        "precio": "$7.690"
+    },
+    {
+        "id": 62,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/chadwik-41-c1339852825d20cc9816811448561008-480-0.webp",
+        "nombre": "Polera punto Morley y punto perle Chadwick",
+        "precio": "$7.020"
+    },
+    {
+        "id": 63,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/normanie1-cc135093846748015016859938377470-480-0.webp",
+        "nombre": "Media polera punto aran Normani",
+        "precio": "$6.290"
+    },
+    {
+        "id": 64,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/dinah-1-21-060da4e786b66d2c9316863170687602-480-0.webp",
+        "nombre": "Media polera puntitos Dinah",
+        "precio": "$5.590"
+    },
+    {
+        "id": 65,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/adebayo-13-87d1eb8e6d3b02ea6016801073393019-480-0.webp",
+        "nombre": "Cardigan trenzado con botones Adebayo",
+        "precio": "$6.290"
+    },
+    {
+        "id": 66,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/toulouse-14-3aa156b6a886f5b58c16799268883149-480-0.webp",
+        "nombre": "Cardigan con trenzas y botones Toulouse",
+        "precio": "$6.290"
+    },
+    {
+        "id": 67,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/amiens1-2e9731a10466640acf16799217466574-480-0.webp",
+        "nombre": "Sweater con puño manga murcielago Amiens",
+        "precio": "$7.490"
+    },
+    {
+        "id": 68,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/jolene-14-aca5db2664f7b2eaf816794120982399-480-0.webp",
+        "nombre": "Polera amplia trenzada con aran en el centro y laterales Jolene",
+        "precio": "$7.290"
+    },
+    {
+        "id": 69,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/dolly-11-298802141879e535e716794110597841-480-0.webp",
+        "nombre": "Sweater lanita trenzada con botones y volados en puños Austen",
+        "precio": "$7.190"
+    },
+    {
+        "id": 70,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/asuten-11-13ebdb4d6bb51c803f16794106881727-480-0.webp",
+        "nombre": "Saquito lanita con botones y cuello con volados Dolly",
+        "precio": "$7.590"
+    },
+    {
+        "id": 71,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/torento-13-79ff3f4ff815f43dd016787285916567-480-0.webp",
+        "nombre": "Sweater amplio con trenzas y calado de rombos a los costados Sorrento",
+        "precio": "$6.690"
+    },
+    {
+        "id": 72,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/tabitha-12-84d1b0f4dd2ffd593516787280675654-480-0.webp",
+        "nombre": "Polera oversize con tajo, canesu y puños de punto perle Tabitha",
+        "precio": "$7.860"
+    },
+    {
+        "id": 73,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/shecvchen1-f071e05bdecbaac07a16863175935563-480-0.webp",
+        "nombre": "Polera manga amplia y rayas de punto lyn y jersey Shevchen",
+        "precio": "$7.490"
+    },
+    {
+        "id": 74,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/lusaka-14-3edeac4d0220a7c5dc16787259791276-480-0.webp",
+        "nombre": "Sweater corto escote V con ochos Lusaka",
+        "precio": "$5.690"
+    },
+    {
+        "id": 75,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/lowry-12-eec20e4cf0cead6f2616787256494821-480-0.webp",
+        "nombre": "Media polera con figuras Lowry",
+        "precio": "$4.990"
+    },
+    {
+        "id": 76,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/kingstone-31-57f18cc847baf9dcff16787251080652-480-0.webp",
+        "nombre": "Polera con diseño de flechas y trenzas Kingston",
+        "precio": "$6.990"
+    },
+    {
+        "id": 77,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/capello-21-6d74b7d779b321d61416787226586058-480-0.webp",
+        "nombre": "Polera con calado y rayas con distintos puntos Capello",
+        "precio": "$6.910"
+    },
+    {
+        "id": 78,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/aldair-12-2226a44296099e17f816787219570361-480-0.webp",
+        "nombre": "Polera con punto de rombos en delantero y manga de morley Aldair",
+        "precio": "$5.990"
+    },
+    {
+        "id": 79,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/romario-21-0fda8625f554add7ca16776879964903-480-0.webp",
+        "nombre": "Poleron oversize Romario",
+        "precio": "$5.290"
+    },
+    {
+        "id": 80,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/lizarazu-13-e32c86a16804067c9c16776867928959-480-0.webp",
+        "nombre": "Polera con trenzas y dos franjas en V´s Laterales Lizarazu",
+        "precio": "$6.690"
+    },
+    {
+        "id": 81,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/kepler-11-f80d2942443d7cd39116776862777187-480-0.webp",
+        "nombre": "Chaleco tejido Kepler",
+        "precio": "$2.690"
+    },
+    {
+        "id": 82,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/erevan1-db1170ed7b918c20fd16863172302903-480-0.webp",
+        "nombre": "Sweater lanita trenzada irregular con tajos en puño y cuerpo Erevan",
+        "precio": "$5.290"
+    },
+    {
+        "id": 83,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/booker-21-d1e0b1dadbb8a701f516771666592498-480-0.webp",
+        "nombre": "Polera amplia mitad punto perle Booker",
+        "precio": "$6.920"
+    },
+    {
+        "id": 84,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/noruega-41-3a1aecf5d2b1abc04f16771026287377-480-0.webp",
+        "nombre": "Sweater manga globo con elastico en cintura Noruega",
+        "precio": "$4.990"
+    },
+    {
+        "id": 85,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/dalton-15-34b2bf4e86fd46b01e16771022761959-480-0.webp",
+        "nombre": "Sweater manga globo con punto tipo cuadrille Dalton",
+        "precio": "$5.490"
+    },
+    {
+        "id": 86,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/sarajevo1-fa31bbcf7b2187c5a716770151880442-480-0.webp",
+        "nombre": "Sweater trenzado con rombos Sarajevo",
+        "precio": "$6.090"
+    },
+    {
+        "id": 87,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/polonia-11-72df54322fbaa0ca1016763071684762-480-0.webp",
+        "nombre": "Sweater Jaquard Polonia",
+        "precio": "$6.490"
+    },
+    {
+        "id": 88,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/pirlo-31-8e781a49aadf894a0716763066147595-480-0.webp",
+        "nombre": "Sweater manga globo punto perle Pirlo",
+        "precio": "$5.790"
+    },
+    {
+        "id": 89,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/kareem-13-69115f8ea49defd1bb16763054186473-480-0.webp",
+        "nombre": "Media polera trenzada manga globo Kareem",
+        "precio": "$6.790"
+    },
+    {
+        "id": 90,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/helsinky-polera-11-5dfeee1c459752152a16763037507817-480-0.webp",
+        "nombre": "Polera manga globo con franja en la manga Helsinki",
+        "precio": "$6.690"
+    },
+    {
+        "id": 91,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/brenon-21-35792933775392736516763023966025-480-0.webp",
+        "nombre": "Polera con ochos Brenton",
+        "precio": "$5.990"
+    },
+    {
+        "id": 92,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/macallan-15-8ab9f8d41d1d1587b216759718489007-480-0.webp",
+        "nombre": "Sweater trenzado y figuras Macallan",
+        "precio": "$5.490"
+    },
+    {
+        "id": 93,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/doncic-13-78e98b1ab42538c36f16759715985530-480-0.webp",
+        "nombre": "Media polera manga globo con puño trenzado Doncic",
+        "precio": "$6.290"
+    },
+    {
+        "id": 94,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/connel-21-7fb5decaa33ddcbfa116759712280804-480-0.webp",
+        "nombre": "Sweater punto morley con rombos Connel",
+        "precio": "$5.490"
+    },
+    {
+        "id": 95,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/bryant-21-e067fb18afadaa763716759707099806-480-0.webp",
+        "nombre": "Sweater con trenzas y puño ancho Bryant",
+        "precio": "$5.290"
+    },
+    {
+        "id": 96,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/albacete-13-ca95bf300841cf8ab416759701312253-480-0.webp",
+        "nombre": "Polera oversize con trenzas horizontales Albacete",
+        "precio": "$7.990"
+    },
+    {
+        "id": 97,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/erling-31-796a89d4d088bd6c1b16757963376889-480-0.webp",
+        "nombre": "Polera punto nido con mangas amplias rebatidas Erling",
+        "precio": "$5.990"
+    },
+    {
+        "id": 98,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/wayne-31-f2f316b945557e7e2816757960409797-480-0.webp",
+        "nombre": "Sweater con dos trenzas anchas en delantero Wayne",
+        "precio": "$5.490"
+    },
+    {
+        "id": 99,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/donegal-12-bd2b13f1843fcae28516757950275990-480-0.webp",
+        "nombre": "Sweater escote redondo con trenzas Donegal",
+        "precio": "$5.490"
+    },
+    {
+        "id": 100,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/draymond-12-a707b4bf68c90e499816757934055872-480-0.webp",
+        "nombre": "Sweater amplio con calado en forma de rombos Draymond",
+        "precio": "$4.990"
+    },
+    {
+        "id": 101,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/cartago-1011-400dd35dc0b460336c16757927295750-480-0.webp",
+        "nombre": "Polera larga con dos trenzas en cada costado del delantero Cartago",
+        "precio": "$7.290"
+    },
+    {
+        "id": 102,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/briony-13-4a1ea44c0c6ed3bc0016757776683889-480-0.webp",
+        "nombre": "Sweater largo trenzado escote V Briony",
+        "precio": "$6.990"
+    },
+    {
+        "id": 103,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/seul-chaleco-trenzado-51-499f236836182f926016746681667768-480-0.webp",
+        "nombre": "Chaleco trenzado Seul",
+        "precio": "$4.390"
+    },
+    {
+        "id": 104,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/yvone-31-6e9189b8e0984d03be16745924680565-480-0.webp",
+        "nombre": "Sweater manga oxford y cuello bote Yvonne",
+        "precio": "$5.690"
+    },
+    {
+        "id": 105,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/pompeya-11-4a877f3898b0af091116745900460366-480-0.webp",
+        "nombre": "Sweater cuello redondo jaquard cebra Pompeya",
+        "precio": "$6.490"
+    },
+    {
+        "id": 106,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/oregon-21-0b26820b8093bc5de816745896762620-480-0.webp",
+        "nombre": "Sweater ancho corto trenzado Oregon",
+        "precio": "$4.990"
+    },
+    {
+        "id": 107,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/glenn-saco-31-76a4161c44239c5e2216745892712379-480-0.webp",
+        "nombre": "Saco largo jaquard cuadrille Glenn",
+        "precio": "$6.290"
+    },
+    {
+        "id": 108,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/oladipo1-4dea92443bee0c45d516863174471436-480-0.webp",
+        "nombre": "Sweater ancho calado y trenzado Oladipo",
+        "precio": "$4.990"
+    },
+    {
+        "id": 109,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/krefeld-41-252c086e6d38a75c9916733777021954-480-0.webp",
+        "nombre": "Chaleco tejido Krefeld",
+        "precio": "$2.990"
+    },
+    {
+        "id": 110,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/garland-21-32fea108ab52df048d16733770226024-480-0.webp",
+        "nombre": "Sweater ccon trenzas Garland",
+        "precio": "$4.990"
+    },
+    {
+        "id": 111,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/biefeld-11-5d9be183f6a99bde6e16826073971955-480-0.webp",
+        "nombre": "Sweater escote redondo con dibujo en V y trenzas en el frente Bielefeld",
+        "precio": "$5.390"
+    },
+    {
+        "id": 112,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/herro-21-24287a71f421d94d3216718075985463-480-0.webp",
+        "nombre": "Polera manga globo con tajo Herro",
+        "precio": "$6.590"
+    },
+    {
+        "id": 113,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/trieste1-9fa8d952f85b70375916819315546976-480-0.webp",
+        "nombre": "Media polera calada calada en V Trieste",
+        "precio": "$5.290"
+    },
+    {
+        "id": 114,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/aubrey-11-f7ea7d4f41860eda4b16826073102128-480-0.webp",
+        "nombre": "Sweater dos trenzas y rombos en frente Aubrey",
+        "precio": "$4.990"
+    },
+    {
+        "id": 115,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/hazard-21-46c11022f1331bbbb216710359247917-480-0.webp",
+        "nombre": "Sweater corto ancho Hazard",
+        "precio": "$5.490"
+    },
+    {
+        "id": 116,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/buttler-41-b12a95a852d10a61b416819278072546-480-0.webp",
+        "nombre": "Sweater amplio escote redondo con hilera de rombos en el centro Buttler",
+        "precio": "$5.690"
+    },
+    {
+        "id": 117,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/lena-sweater-41-e75503eee8ccbfdfcd16832170446542-480-0.webp",
+        "nombre": "Sweater combinado V Lenna",
+        "precio": "$6.860"
+    },
+    {
+        "id": 118,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/otto-11-ad1ab100ca2b15c74016606733161955-480-0.webp",
+        "nombre": "Sweater ancho calado Otto",
+        "precio": "$6.990"
+    },
+    {
+        "id": 119,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/niza-sweater-trenzado-11-983b1072982525b95016602375635628-480-0.webp",
+        "nombre": "Sweater trenzado manga globo Niza",
+        "precio": "$5.690"
+    },
+    {
+        "id": 120,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/shearer1-51717e5a01403e880316826174516595-480-0.webp",
+        "nombre": "Poleron oversize con tajo Shearer",
+        "precio": "$5.490"
+    },
+    {
+        "id": 121,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/shoulder-21-8db75e248c637c815516718055103879-480-0.webp",
+        "nombre": "Sweater hombros caidos Shoulder",
+        "precio": "$6.590"
+    },
+    {
+        "id": 122,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/rogue-11-a62f55ddb9c594e49516588555015212-480-0.webp",
+        "nombre": "Sweater pesado trenzado manga globo Rogue",
+        "precio": "$6.490"
+    },
+    {
+        "id": 123,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/irene-31-f4058c165cbb21a16316593723022211-480-0.webp",
+        "nombre": "Media polera trenzada manga globo Irene",
+        "precio": "$6.990"
+    },
+    {
+        "id": 124,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/london-11-ddf24f789c01acc2cc16587731231094-480-0.webp",
+        "nombre": "Sweater amplio lanilla brush escote redondo London",
+        "precio": "$5.490"
+    },
+    {
+        "id": 125,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/cancun-21-d489fab6c432b03b4916583356694504-480-0.webp",
+        "nombre": "Polera manga globo Cancun",
+        "precio": "$6.690"
+    },
+    {
+        "id": 126,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/montgomery-4111-bc9c2fc2a242d9530316587764013082-480-0.webp",
+        "nombre": "Polera manga trenzada Montgomery",
+        "precio": "$6.290"
+    },
+    {
+        "id": 127,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/philipa-111-8d13eaa201cc2abba816579014491225-480-0.webp",
+        "nombre": "Sweater oversized Philipa",
+        "precio": "$6.990"
+    },
+    {
+        "id": 128,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/053/068/products/gadot-1011-3ae34360adabc510ef16587720826051-480-0.webp",
+        "nombre": "Media polera manga volados Gadot",
+        "precio": "$5.690"
+    }
+]

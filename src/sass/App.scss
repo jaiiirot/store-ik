@@ -5,11 +5,11 @@ $fairy-tale: #eac2cfff;
 $lavender-blush: #eee0e7ff;
 $azure-web: #f2fdffff;
 $slate-gray: #818b9aff;
-$charcoal: #495268ff;
+$charcoal: rgb(52, 53, 58);
 $oxford-blue: #101935ff;
 $black: #000;
 $font-logo: "Cinzel Decorative", cursive;
-$font-text: 'Maven Pro', sans-serif;
+$font-text: "Maven Pro", sans-serif;
 
 html {
   scroll-behavior: smooth;
@@ -24,7 +24,19 @@ html {
   list-style: none;
   scroll-behavior: smooth;
 }
+
+body{
+  background: $lavender-blush;
+}
+
+* img{
+  pointer-events: none;
+}
 /* NabVar */
 @import "./NavBar";
 /* ItemListContainer */
 @import "./ItemListContainer";
+/* ItemCount */
+@import "./ItemCount";
+/* ItemSlider */
+@import "./ItemSlider";
