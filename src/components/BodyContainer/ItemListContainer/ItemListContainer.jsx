@@ -10,7 +10,7 @@ function ItemListContainer() {
               <Itemcount
                 key={e.id}
                 imagen={e.img}
-                titulo={e.nombre}
+                titulo={e.nombre} 
                 precio={e.precio}
               />
             );
