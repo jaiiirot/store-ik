@@ -1,10 +1,10 @@
-import ItemSliderContainer from "./ItemSliderContainer/ItemSliderContainer";
 import ItemListContainer from "./ItemListContainer/ItemListContainer";
+import CarrucelContainer from "./ItemSliderContainer/CarrucelContainer";
 
 function BodyContainer() {
   return (
     <section className="BodyContainer">
-      <ItemSliderContainer />
+      <CarrucelContainer/>
       <ItemListContainer />
     </section>
   );

@@ -1,9 +1,9 @@
 // import Itemcount from "./ItemCount";
-import productos from "../../../products/products.json";
+import { catalogue } from "../../../asset/catalogue/catalogue";
 // import { useState } from "react";
 import ItemList from "./ItemList";
 function ItemListContainer() {
-/*   const [quantity, setQuantity] = useState(0);
+  /*   const [quantity, setQuantity] = useState(0);
   const incrementCart = (stock) => {
     if (quantity < stock) quantity++;
   }; */
@@ -11,7 +11,7 @@ function ItemListContainer() {
   return (
     <div className="ItemListContainer">
       <h2>SWEATERS Y POLERAS</h2>
-      <ItemList productos={productos}/>
+      <ItemList productos={catalogue} />
     </div>
   );
 }

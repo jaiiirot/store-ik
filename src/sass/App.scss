@@ -1,4 +1,7 @@
 // Paleta de colores -> https://coolors.co/e1869f-eac2cf-eee0e7-f2fdff-818b9a-495268-101935
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 $rose-pompadour: #e1869fff;
 $fairy-tale: #eac2cfff;
@@ -32,12 +35,17 @@ body{
 * img{
   pointer-events: none;
 }
+
+* .font-family-title{
+  font-family: $font-logo;
+  font-weight: 700;
+}
 /* NabVar */
 @import "./NavBar";
 /* BodyContainer */
 @import './BodyContainer';
 /* ItemSliderContainer */
-@import './ItemSliderContainer';
+@import './CarrucelContainer';
 /* ItemListContainer */
 @import "./ItemListContainer";
 /* ItemList */
