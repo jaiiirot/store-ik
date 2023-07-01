@@ -1,22 +1,17 @@
-import Itemcount from "../ItemCount/ItemCount";
+// import Itemcount from "./ItemCount";
 import productos from "../../../products/products.json";
+// import { useState } from "react";
+import ItemList from "./ItemList";
 function ItemListContainer() {
+/*   const [quantity, setQuantity] = useState(0);
+  const incrementCart = (stock) => {
+    if (quantity < stock) quantity++;
+  }; */
+
   return (
     <div className="ItemListContainer">
-      <section className="ItemListContainer__cards">
-        {productos.map((e, i) => {
-          if (i < 13) {
-            return (
-              <Itemcount
-                key={e.id}
-                imagen={e.img}
-                titulo={e.nombre} 
-                precio={e.precio}
-              />
-            );
-          }
-        })}
-      </section>
+      <h2>SWEATERS Y POLERAS</h2>
+      <ItemList productos={productos}/>
     </div>
   );
 }
