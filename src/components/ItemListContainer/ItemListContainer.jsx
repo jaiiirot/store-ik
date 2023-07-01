@@ -1,6 +1,4 @@
-// import Itemcount from "./ItemCount";
-import { catalogue } from "../../../asset/catalogue/catalogue";
-// import { useState } from "react";
+import { catalogue } from "../../asset/catalogue/catalogue";
 import ItemList from "./ItemList";
 function ItemListContainer() {
   /*   const [quantity, setQuantity] = useState(0);

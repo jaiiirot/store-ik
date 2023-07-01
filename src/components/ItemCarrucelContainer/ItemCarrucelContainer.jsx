@@ -1,7 +1,7 @@
 import { Carousel, IconButton } from "@material-tailwind/react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
-import videoUno from "../../../asset/video/videoUno.mp4";
-import videoDos from "../../../asset/video/videoDos.mp4";
+import videoUno from "../../asset/video/videoUno.mp4";
+import videoDos from "../../asset/video/videoDos.mp4";
 import ItemCarrucel from "./ItemCarrucel";
 export default function CarrucelContainer() {
   return (
