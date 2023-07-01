@@ -1,17 +1,14 @@
-// import logo from "./img/noaN.png";
-import "./style/App.css";
-// import Navbar from "./components/Navbar/Navbar";
-// import BodyContainer from "./components/BodyContainer/BodyContainer";
-import BodyContainer from "./components/BodyContainer/BodyContainer";
 import Navbar from "./components/Navbar/Navbar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemCarrucelContainer from "./components/ItemCarrucelContainer/ItemCarrucelContainer";
 function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Navbar /> */}
-      <BodyContainer />
-      {/* <BodyContainer /> */}
-
+      <div className="my-BodyContainer">
+        <ItemCarrucelContainer />
+        <ItemListContainer />
+      </div>
     </div>
   );
 }
