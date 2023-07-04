@@ -1,8 +1,9 @@
 import Item from "./Item";
-function ItemList({ productos }) {
+function ItemList({ catalogoProductos }) {
+  console.log(catalogoProductos)
   return (
     <>
-      {productos.map((item) => {
+      {catalogoProductos.map((item) => {
           return <Item
             key={item.id}
             id={item.id}

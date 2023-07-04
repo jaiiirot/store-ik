@@ -1,6 +1,6 @@
 export const catalogue = [
   {
-    id: "camperas y parkas",
+    id: "camperasyparkas",
     category: "CAMPERAS Y PARKAS",
     productos: [
       {
@@ -118,7 +118,7 @@ export const catalogue = [
     ],
   },
   {
-    id: "sweaters y poleras",
+    id: "sweatersypoleras",
     category: "SWEATERS Y POLERAS",
     productos: [
       {
@@ -359,7 +359,7 @@ export const catalogue = [
     ],
   },
   {
-    id: "monos y vestidos",
+    id: "monosyvestidos",
     category: "MONOS Y VESTIDOS",
     productos: [
       {
@@ -457,6 +457,7 @@ export const getProducts = () => {
       i++;
     });
   });
+  console.log(itemProduct)
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(itemProduct);
@@ -481,6 +482,23 @@ export const getProductsById = (productId) => {
   });
 };
 
+export const getProductsByCat = (cate) => {
+  let itemProduct = [];
+  let i = 0;
+  catalogue.forEach((section) => {
+    section.productos.forEach((item) => {
+      item.id = i;
+      itemProduct[i] = item;
+      i++;
+    });
+  });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(itemProduct.find((prod) => prod.id == productId));
+    }, 500);
+  });
+};
+
 export const getCategory = (itemCategoryTitulo) => {
   let itemCategory = [];
   catalogue.forEach((section, i) => {
@@ -489,6 +507,20 @@ export const getCategory = (itemCategoryTitulo) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(itemCategory.find((cat) => cat == itemCategoryTitulo));
+    }, 500);
+  });
+};
+
+export const getProductsByCategory = (itemCategoryTitulo) => {
+  let itemCategory;
+  catalogue.forEach((section) => {
+    if (section.id == itemCategoryTitulo) itemCategory = section;
+  });
+  // console.log(itemCategoryTitulo);
+  console.log(itemCategory);
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(itemCategory);
     }, 500);
   });
 };

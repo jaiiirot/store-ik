@@ -1,4 +1,7 @@
-import { getProducts } from "../../asset/catalogue/catalogue";
+import {
+  getProducts,
+  getProductsByCategory,
+} from "../../asset/catalogue/catalogue";
 import { Fragment, useState, useEffect } from "react";
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
@@ -63,19 +66,21 @@ function ItemListContainer() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [products, setProducts] = useState([]);
   const { itemCategoryTitulo } = useParams();
+  console.log("itemCategoryTitulo: -> ", itemCategoryTitulo);
 
   useEffect(() => {
     const asyncFunc = itemCategoryTitulo ? getProductsByCategory : getProducts;
 
-    asyncFunc(itemCategoryTitulo)
+    asyncFunc(itemCategoryTitulo) 
       .then((response) => {
-        console.log(response)
+        // console.log(response)
         setProducts(response);
       })
       .catch((err) => {
         console.error(err);
-      }); 
+      });
   }, [itemCategoryTitulo]);
+  console.log(products);
   return (
     <div className="bg-white">
       <div>
@@ -325,7 +330,7 @@ function ItemListContainer() {
               {/* Product grid */}
               <div className="lg:col-span-4">
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
-                  <ItemList productos={products} />
+                  <ItemList catalogoProductos={products} />
                 </div>
               </div>
             </div>

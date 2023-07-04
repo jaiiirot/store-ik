@@ -1,4 +1,5 @@
 import { Typography, Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 function ItemCarrucel({ video }) {
   return (
     <div className="relative h-96 w-full">
@@ -19,12 +20,17 @@ function ItemCarrucel({ video }) {
           >
             Indumentaria Kevin
           </Typography>
-          <Typography variant="lead" color="white" className="mb-12 opacity-80 text-xs md:tex-base lg:text-lg">
-          “La simplicidad, llevada al extremo, se convierte en elegancia.” Jon Franklin
+          <Typography
+            variant="lead"
+            color="white"
+            className="mb-12 opacity-80 text-xs md:tex-base lg:text-lg"
+          >
+            “La simplicidad, llevada al extremo, se convierte en elegancia.” Jon
+            Franklin
           </Typography>
           <div className="flex gap-2 flex-wrap">
             <Button size="md" color="white">
-              Productos
+              <Link to={`/categoria/buzos`}>Productos</Link>
             </Button>
             <Button size="md" color="white" variant="text">
               Carrito

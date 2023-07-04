@@ -1,7 +1,7 @@
 // import Navbar from "../components/Navbar/Navbar";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import ItemCarrucelContainer from "../components/ItemCarrucelContainer/ItemCarrucelContainer";
-import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
+// import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
 import ItemSection from "../components/ItemSection/ItemSection";
 // import { Outlet } from "react-router-dom";
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <div>
         <ItemCarrucelContainer />
         <ItemSection />
-        <ItemListContainer />
+        {/* <ItemListContainer /> */}
       </div>
     </div>
   );
