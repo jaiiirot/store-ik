@@ -453,8 +453,7 @@ export const getProducts = () => {
   catalogue.forEach((section) => {
     section.productos.forEach((item) => {
       item.id = i;
-      itemProduct[i] = item;
-      i++;
+      itemProduct[i] = item;      i++;
     });
   });
   // console.log(itemProduct)
