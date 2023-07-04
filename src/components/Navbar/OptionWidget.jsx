@@ -61,7 +61,7 @@ function OptionWidget({ navigation, classNames }) {
                                         return (
                                           <li key={item.name} className="flex">
                                             <Link
-                                              to={`/categoria/${item.name}`}
+                                              to={`/categoria/${(item.name).split(' ').join('')}/`}
                                             >
                                               <span className="hover:text-gray-900 my-navbar--items text-gray-700">
                                                 {item.name}

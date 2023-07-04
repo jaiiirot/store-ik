@@ -66,7 +66,7 @@ function ItemListContainer() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [products, setProducts] = useState([]);
   const { itemCategoryTitulo } = useParams();
-  console.log("itemCategoryTitulo: -> ", itemCategoryTitulo);
+  // console.log("itemCategoryTitulo: -> ", itemCategoryTitulo);
 
   useEffect(() => {
     const asyncFunc = itemCategoryTitulo ? getProductsByCategory : getProducts;
@@ -80,7 +80,6 @@ function ItemListContainer() {
         console.error(err);
       });
   }, [itemCategoryTitulo]);
-  console.log(products);
   return (
     <div className="bg-white">
       <div>
@@ -197,7 +196,7 @@ function ItemListContainer() {
         <main className="mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-8">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900">
-              New Arrivals
+              {itemCategoryTitulo}
             </h1>
 
             <div className="flex items-center">

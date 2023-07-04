@@ -457,7 +457,7 @@ export const getProducts = () => {
       i++;
     });
   });
-  console.log(itemProduct)
+  // console.log(itemProduct)
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(itemProduct);
@@ -514,10 +514,12 @@ export const getCategory = (itemCategoryTitulo) => {
 export const getProductsByCategory = (itemCategoryTitulo) => {
   let itemCategory;
   catalogue.forEach((section) => {
-    if (section.id == itemCategoryTitulo) itemCategory = section;
+    if (section.id == itemCategoryTitulo) {
+      itemCategory = section;
+    } else if (itemCategoryTitulo == "todos") {
+      itemCategory = getProducts();
+    }
   });
-  // console.log(itemCategoryTitulo);
-  console.log(itemCategory);
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(itemCategory);

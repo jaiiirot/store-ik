@@ -1,10 +1,20 @@
+import { useEffect, useState } from "react";
 import Item from "./Item";
 function ItemList({ catalogoProductos }) {
-  console.log(catalogoProductos)
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    // console.log(catalogoProductos)
+    setProduct(catalogoProductos.productos||catalogoProductos)
+  }, [catalogoProductos]);
+
+    // console.log(product)
+
   return (
     <>
-      {catalogoProductos.map((item) => {
-          return <Item
+      {product?.map((item) => {
+        return (
+          <Item
             key={item.id}
             id={item.id}
             imagen={item.img}
@@ -12,12 +22,8 @@ function ItemList({ catalogoProductos }) {
             precio={item.precio}
             initial={0}
             stock={item.stock}
-            onAdd={(quantity, titulo) => {
-              console.log(
-                "cantidad agregada " + quantity + " del producto: " + titulo
-              );
-            }}
           />
+        );
       })}
     </>
   );

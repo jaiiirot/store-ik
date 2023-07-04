@@ -14,9 +14,15 @@ const navigation = {
         {
           id: "ropa",
           name: "Ropa",
-          items: [{ name: "Tops" }, { name: "Vestidos" }],
+          items: [
+            { name: "todos" },
+            { name: "camperas y parkas" },
+            { name: "sweaters y poleras" },
+            { name: "buzos" },
+            { name: "monos y vestidos" },
+          ],
         },
-        {
+       /*  {
           id: "accesorios",
           name: "Accesorios",
           items: [{ name: "Relojes" }, { name: "Carteras" }],
@@ -25,10 +31,10 @@ const navigation = {
           id: "marcas",
           name: "Marcas",
           items: [{ name: "Nelson completo" }, { name: "A mi manera" }],
-        },
+        }, */
       ],
     },
-    {
+    /* {
       id: "Hombre",
       name: "Hombre",
       sections: [
@@ -60,7 +66,7 @@ const navigation = {
           ],
         },
       ],
-    },
+    }, */
   ],
   pages: [
     // { name: "Novedades"},
