@@ -10,8 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemLayout />}>
           <Route index element={<Home />} />
-          <Route path="/categoria/:itemCategoryTitulo" element={<ItemListContainer />} />
-          <Route path="/producto/:itemId/:itemTitulo" element={<ItemDetailContainer />} />
+          <Route path="categoria/:itemCategoryTitulo" element={<ItemListContainer />} />
+          <Route path="producto/:itemId/:itemTitulo" element={<ItemDetailContainer />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

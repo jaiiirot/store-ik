@@ -11,7 +11,6 @@ function Item({id, imagen, titulo, precio, initial, stock }) {
     <>
       <div className="Item normal-case text-black active:bg-pink-500/20">
         {/* <Link to={`/item/${(titulo).split(' ').join('-')}`}> */}
-        <Link to={`/producto/${id}/${titulo}`} >
           <div className="Item__options">
             <IconButton
               className="bg-[#000] hover:bg-[#787878] rounded-full"
@@ -24,6 +23,7 @@ function Item({id, imagen, titulo, precio, initial, stock }) {
             </IconButton>
           </div>
 
+        <Link to={`/producto/${id}/${titulo}`} >
           <div className="Item__img ">
             <img className="w-full" src={imagen} />
           </div>
