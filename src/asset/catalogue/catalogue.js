@@ -1,133 +1,3 @@
-export const navigation = {
-  categories: [
-    {
-      id: "Mujer",
-      name: "Mujer",
-      featured: [
-        {
-          name: "New Arrivals",
-          href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
-          imageAlt:
-            "Models sitting back to back, wearing Basic Tee in black and bone.",
-        },
-        {
-          name: "Basic Tees",
-          href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg",
-          imageAlt:
-            "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
-        },
-      ],
-      sections: [
-        {
-          id: "ropa",
-          name: "Ropa",
-          items: [
-            { name: "Tops" },
-            { name: "Vestidos" },
-            { name: "Pantalones" },
-            { name: "Denim" },
-            { name: "Suéteres" },
-            { name: "Camisetas" },
-            { name: "Chaquetas" },
-            { name: "Ropa deportiva" },
-            { name: "Examinar todo" },
-          ],
-        },
-        {
-          id: "accesorios",
-          name: "Accesorios",
-          items: [
-            { name: "Relojes" },
-            { name: "Carteras" },
-            { name: "Bolsas" },
-            { name: "Gafas de sol" },
-            { name: "Sombreros" },
-            { name: "cinturones" },
-          ],
-        },
-        {
-          id: "marcas",
-          name: "Marcas",
-          items: [
-            { name: "Nelson completo" },
-            { name: "A mi manera" },
-            { name: "Reorganizado" },
-            { name: "Falsificado" },
-            { name: "Otro significativo" },
-          ],
-        },
-      ],
-    },
-    {
-      id: "Hombre",
-      name: "Hombre",
-      featured: [
-        {
-          name: "Los recién llegados",
-          href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
-          imageAlt:
-            "Drawstring top with elastic loop closure and textured interior padding.",
-        },
-        {
-          name: "Camisetas con ilustraciones",
-          href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg",
-          imageAlt:
-            "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
-        },
-      ],
-      sections: [
-        {
-          id: "ropa",
-          name: "Ropa",
-          items: [
-            { name: "Tops" },
-            { name: "Pantalones" },
-            { name: "Suéteres" },
-            { name: "Camisetas" },
-            { name: "Chaquetas" },
-            { name: "ropa deportiva" },
-            { name: "Explorar todo" },
-          ],
-        },
-        {
-          id: "accesorios",
-          name: "Accesorios",
-          items: [
-            { name: "Relojes" },
-            { name: "Carteras" },
-            { name: "Bolsas" },
-            { name: "Gafas de sol" },
-            { name: "Sombreros" },
-            { name: "cinturones" },
-          ],
-        },
-        {
-          id: "marcas",
-          name: "Marcas",
-          items: [
-            { name: "Reorganizado" },
-            { name: "Falsificación" },
-            { name: "Nelson completo" },
-            { name: "A mi manera" },
-          ],
-        },
-      ],
-    },
-  ],
-  pages: [
-    // { name: "Novedades"},
-    { name: "Compania" },
-  ],
-};
-
 export const catalogue = [
   {
     id: "camperas y parkas",
@@ -576,3 +446,49 @@ export const catalogue = [
     ],
   },
 ];
+
+export const getProducts = () => {
+  let itemProduct = [];
+  let i = 0;
+  catalogue.forEach((section) => {
+    section.productos.forEach((item) => {
+      item.id = i;
+      itemProduct[i] = item;
+      i++;
+    });
+  });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(itemProduct);
+    }, 500);
+  });
+};
+
+export const getProductsById = (productId) => {
+  let itemProduct = [];
+  let i = 0;
+  catalogue.forEach((section) => {
+    section.productos.forEach((item) => {
+      item.id = i;
+      itemProduct[i] = item;
+      i++;
+    });
+  });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(itemProduct.find((prod) => prod.id == productId));
+    }, 500);
+  });
+};
+
+export const getCategory = (itemCategoryTitulo) => {
+  let itemCategory = [];
+  catalogue.forEach((section, i) => {
+    itemCategory[i] = section.category;
+  });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(itemCategory.find((cat) => cat == itemCategoryTitulo));
+    }, 500);
+  });
+};

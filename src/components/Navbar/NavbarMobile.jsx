@@ -2,12 +2,12 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog, Tab, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
-function NavbarMobile({ open, setOpen, navigation ,classNames}) {
+function NavbarMobile({ open, setOpen, navigation, classNames }) {
   return (
     <>
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
+        <Dialog as="div" className="relative z-[100] lg:hidden" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -20,7 +20,7 @@ function NavbarMobile({ open, setOpen, navigation ,classNames}) {
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
 
-          <div className="fixed inset-0 z-40 flex">
+          <div className="fixed inset-0 z-[100] flex">
             <Transition.Child
               as={Fragment}
               enter="transition ease-in-out duration-300 transform"
@@ -70,30 +70,44 @@ function NavbarMobile({ open, setOpen, navigation ,classNames}) {
                         className="space-y-10 px-4 pb-8 pt-10"
                       >
                         {category.sections.map((section) => (
-                          <div key={section.name}>
-                            <p
-                              id={`${category.id}-${section.id}-heading-mobile`}
-                              className="font-medium text-gray-900"
-                            >
-                              {section.name}
-                            </p>
-                            <ul
-                              role="list"
-                              aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
-                              className="mt-6 flex flex-col space-y-6"
-                            >
+                          <details className="group [&_summary::-webkit-details-marker]:hidden" key={section.name}>
+                            <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-900 hover:bg-gray-100 hover:text-gray-700">
+                              <span className="-m-2 block p-2 font-medium text-gray-900">
+                                {section.name}
+                              </span>
+
+                              <span className="shrink-0 transition duration-300 group-open:-rotate-180">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  className="h-5 w-5"
+                                  viewBox="0 0 20 20"
+                                  fill="currentColor"
+                                >
+                                  <path
+                                    fillRule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clipRule="evenodd"
+                                  />
+                                </svg>
+                              </span>
+                            </summary>
+
+                            <ul className="mt-2 space-y-1 px-4">
                               {section.items.map((item) => (
-                                <li key={item.name} className="flow-root">
-                                  <a
+                                <li
+                                  key={item.name}
+                                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 hover:text-gray-900"
+                                >
+                                  <span
                                     href={item.href}
                                     className="-m-2 block p-2 text-gray-500"
                                   >
                                     {item.name}
-                                  </a>
+                                  </span>
                                 </li>
                               ))}
                             </ul>
-                          </div>
+                          </details>
                         ))}
                       </Tab.Panel>
                     ))}

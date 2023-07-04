@@ -1,12 +1,14 @@
-.my-navbar{
+.my-navbar {
+  // position: sticky;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 60;
   background: $fairy-tale;
-  * button{
+  * button {
     outline: none;
   }
-  &--page:hover, &--items:hover{
+  &--page:hover,
+  &--items:hover {
     cursor: pointer;
   }
 }

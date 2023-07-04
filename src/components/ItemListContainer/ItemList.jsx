@@ -1,23 +1,24 @@
 import Item from "./Item";
 function ItemList({ productos }) {
   return (
-    <section className="ItemList">
-      {productos.forEach((e) => {
-        console.log(e.productos)
-        // e.productos.map((element) => {
-        //   return (
-        //     <Item
-        //       key={element.id}
-        //       imagen={element.img}
-        //       titulo={element.nombre}
-        //       precio={element.precio}
-        //       initial={0}
-        //       stock={element.stock}
-        //     />
-        //   );
-        // });
+    <>
+      {productos.map((item) => {
+          return <Item
+            key={item.id}
+            id={item.id}
+            imagen={item.img}
+            titulo={item.nombre}
+            precio={item.precio}
+            initial={0}
+            stock={item.stock}
+            onAdd={(quantity, titulo) => {
+              console.log(
+                "cantidad agregada " + quantity + " del producto: " + titulo
+              );
+            }}
+          />
       })}
-    </section>
+    </>
   );
 }
 

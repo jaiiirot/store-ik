@@ -1,32 +1,43 @@
-function Item({ imagen, titulo, precio, initial, stock, incrementCart }) {
+import { IconButton } from "@material-tailwind/react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+function Item({id, imagen, titulo, precio, initial, stock }) {
+  const [quantity, setQuantity] = useState(initial);
+  const increment = () => {
+    setQuantity(quantity + 1);
+  };
+
   return (
-    <div className="Item">
-      <span className="Item__options">
-        <button
-          title="Agregar al Carrito"
-          className="btn-verde" /* onClick={increment} */
-        >
-          <i className="bx bxs-shopping-bags"></i>
-        </button>
-        <button
-          title="Me gusta"
-          className="btn-verde" /* onClick={increment} */
-        >
-          <i className="bx bxs-heart-circle"></i>
-        </button>
-        <button title="Ver detalles" className="btn-verde">
-          <i className="bx bxs-bullseye"></i>
-        </button>
-      </span>
-      <div className="Item__img">
-        <img src={imagen} />
+    <>
+      <div className="Item normal-case text-black active:bg-pink-500/20">
+        {/* <Link to={`/item/${(titulo).split(' ').join('-')}`}> */}
+        <Link to={`/producto/${id}/${titulo}`} >
+          <div className="Item__options">
+            <IconButton
+              className="bg-[#000] hover:bg-[#787878] rounded-full"
+              onClick={increment}
+            >
+              <i className="bx bxs-shopping-bags sm:text-xl"></i>
+            </IconButton>
+            <IconButton className="bg-[#000] hover:bg-[#787878] rounded-full">
+              <i className="bx bxs-heart-circle sm:text-xl"></i>
+            </IconButton>
+          </div>
+
+          <div className="Item__img ">
+            <img className="w-full" src={imagen} />
+          </div>
+          <div className="flex flex-col h-28 justify-around">
+            <h4 className="text-sm font-semibold text-start ">{titulo}</h4>
+            <div className="flex gap-4 justify-around items-center">
+              <p className="text-sm">Stock: {stock}</p>
+              <span>{quantity}</span>
+              <h4 className="text-sm font-medium">{precio}</h4>
+            </div>
+          </div>
+        </Link>
       </div>
-      <div className="Item__informacion">
-        <h4>{titulo}</h4>
-        <p>Stock disponible: {stock}</p>
-        <h4>{precio}</h4>
-      </div>
-    </div>
+    </>
   );
 }
 
