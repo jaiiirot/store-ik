@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import CartWidget from "./CartWidget";
+import CartWidget from "./NavbarCartWidget";
 import NavbarMobile from "./NavbarMobile";
-import OptionWidget from "./OptionWidget";
+import OptionWidget from "./NavbarOptionWidget";
 import { Link } from "react-router-dom";
 
 const navigation = {
@@ -71,6 +71,7 @@ const navigation = {
   pages: [
     // { name: "Novedades"},
     { name: "Compania" },
+    { name: "Contacto" },
   ],
 };
 
@@ -91,7 +92,7 @@ export default function Navbars() {
       />
 
       <header className="sticky my-navbar z-[100]">
-        <p className="flex h-10 items-center justify-center bg-black px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+        <p className="flex h-10 items-center justify-center bg-[#151e31] px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           obten un 30% de descuento
         </p>
 

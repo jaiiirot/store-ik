@@ -23,19 +23,19 @@ function ItemCarrucel({ video }) {
           <Typography
             variant="lead"
             color="white"
-            className="mb-12 opacity-80 text-xs md:tex-base lg:text-lg"
+            className="mb-12 opacity-80 text-xs md:tex-base lg:text-lg font-family-text"
           >
             “La simplicidad, llevada al extremo, se convierte en elegancia.” Jon
             Franklin
           </Typography>
           <div className="flex gap-2 flex-wrap">
             <Link to={`/categoria/todos`}>
-              <Button size="md" color="white">
+              <Button size="md" color="white" className="font-family-text">
                 Productos
               </Button>
             </Link>
 
-            <Button size="md" color="white" variant="text">
+            <Button size="md" color="white" variant="text" className="font-family-text">
               Carrito
             </Button>
           </div>

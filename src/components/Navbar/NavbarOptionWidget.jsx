@@ -1,6 +1,6 @@
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import { NavLink , Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 function OptionWidget({ navigation, classNames }) {
   return (
     <>
@@ -61,7 +61,9 @@ function OptionWidget({ navigation, classNames }) {
                                         return (
                                           <li key={item.name} className="flex">
                                             <Link
-                                              to={`/categoria/${(item.name).split(' ').join('')}/`}
+                                              to={`/categoria/${item.name
+                                                .split(" ")
+                                                .join("")}/`}
                                             >
                                               <span className="hover:text-gray-900 my-navbar--items text-gray-700">
                                                 {item.name}
@@ -90,7 +92,7 @@ function OptionWidget({ navigation, classNames }) {
               key={page.name}
               className={`flex items-center text-lg font-medium text-gray-900 hover:text-gray-800 my-navbar--page`}
             >
-              {page.name}
+              <Link to={`/${page.name}/`}>{page.name}</Link>
             </span>
           ))}
         </div>

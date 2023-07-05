@@ -12,7 +12,7 @@ $charcoal: rgb(52, 53, 58);
 $oxford-blue: #101935ff;
 $black: #000;
 $font-logo: "Cinzel Decorative", cursive;
-$font-text: sans-serif;
+$font-text: "Josefin Sans", sans-serif;
 
 html {
   scroll-behavior: smooth;
@@ -39,6 +39,10 @@ body {
 * .font-family-title {
   font-family: $font-logo;
   font-weight: 700;
+}
+
+* .font-family-text{
+  font-family: $font-text;
 }
 
 /* .my-BodyContainer {
