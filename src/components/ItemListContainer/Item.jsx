@@ -23,7 +23,7 @@ function Item({id, imagen, titulo, precio, initial, stock }) {
             </IconButton>
           </div>
 
-        <Link to={`/producto/${id}/${titulo}`} >
+        <Link to={`${id}/${titulo}`} >
           <div className="Item__img ">
             <img className="w-full" src={imagen} />
           </div>

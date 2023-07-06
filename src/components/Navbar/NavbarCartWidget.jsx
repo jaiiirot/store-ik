@@ -3,18 +3,7 @@ import {
   ShoppingBagIcon,
   HeartIcon,
 } from "@heroicons/react/24/solid";
-import { catalogue } from "../../asset/catalogue/catalogue";
 function CartWidget() {
-  const searchProducto = () => {
-    let people = [];
-    let i = 0;
-    catalogue.forEach((e) => {
-      e.productos.forEach((element) => {
-        people[i] = element;
-        i++;
-      });
-    });
-  };
   return (
     <div className="flex items-center">
       {/* Search */}

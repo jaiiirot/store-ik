@@ -29,7 +29,7 @@ function ItemCarrucel({ video }) {
             Franklin
           </Typography>
           <div className="flex gap-2 flex-wrap">
-            <Link to={`/categoria/todos`}>
+            <Link to={`categoria/todos`}>
               <Button size="md" color="white" className="font-family-text">
                 Productos
               </Button>

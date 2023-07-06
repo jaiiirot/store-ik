@@ -61,7 +61,7 @@ function OptionWidget({ navigation, classNames }) {
                                         return (
                                           <li key={item.name} className="flex">
                                             <Link
-                                              to={`/categoria/${item.name
+                                              to={`${item.name
                                                 .split(" ")
                                                 .join("")}/`}
                                             >
