@@ -1,7 +1,7 @@
 import { IconButton } from "@material-tailwind/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-function Item({id, imagen, titulo, precio, initial, stock }) {
+function Item({ id, imagen, titulo, precio, initial, stock }) {
   const [quantity, setQuantity] = useState(initial);
   const increment = () => {
     setQuantity(quantity + 1);
@@ -11,19 +11,19 @@ function Item({id, imagen, titulo, precio, initial, stock }) {
     <>
       <div className="Item normal-case text-black active:bg-pink-500/20">
         {/* <Link to={`/item/${(titulo).split(' ').join('-')}`}> */}
-          <div className="Item__options">
-            <IconButton
-              className="bg-[#000] hover:bg-[#787878] rounded-full"
-              onClick={increment}
-            >
-              <i className="bx bxs-shopping-bags sm:text-xl"></i>
-            </IconButton>
-            <IconButton className="bg-[#000] hover:bg-[#787878] rounded-full">
-              <i className="bx bxs-heart-circle sm:text-xl"></i>
-            </IconButton>
-          </div>
+        <div className="Item__options">
+          <IconButton
+            className="bg-[#000] hover:bg-[#787878] rounded-full"
+            onClick={increment}
+          >
+            <i className="bx bxs-shopping-bags sm:text-xl"></i>
+          </IconButton>
+          <IconButton className="bg-[#000] hover:bg-[#787878] rounded-full">
+            <i className="bx bxs-heart-circle sm:text-xl"></i>
+          </IconButton>
+        </div>
 
-        <Link to={`${id}/${titulo}`} >
+        <Link to={`${id}/${titulo}`}>
           <div className="Item__img ">
             <img className="w-full" src={imagen} />
           </div>

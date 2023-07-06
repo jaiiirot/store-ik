@@ -87,7 +87,7 @@ function ItemListContainer() {
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
           <Dialog
             as="div"
-            className="relative z-40 lg:hidden"
+            className="relative z-[110] lg:hidden"
             onClose={setMobileFiltersOpen}
           >
             <Transition.Child

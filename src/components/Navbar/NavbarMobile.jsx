@@ -1,13 +1,18 @@
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog, Tab, Transition } from "@headlessui/react";
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 function NavbarMobile({ open, setOpen, navigation, classNames }) {
   return (
     <>
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-[100] lg:hidden" onClose={setOpen}>
+        <Dialog
+          as="div"
+          className="relative z-[100] lg:hidden"
+          onClose={setOpen}
+        >
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -70,7 +75,10 @@ function NavbarMobile({ open, setOpen, navigation, classNames }) {
                         className="space-y-10 px-4 pb-8 pt-10"
                       >
                         {category.sections.map((section) => (
-                          <details className="group [&_summary::-webkit-details-marker]:hidden" key={section.name}>
+                          <details
+                            className="group [&_summary::-webkit-details-marker]:hidden"
+                            key={section.name}
+                          >
                             <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-900 hover:bg-gray-100 hover:text-gray-700">
                               <span className="-m-2 block p-2 font-medium text-gray-900">
                                 {section.name}
@@ -94,17 +102,19 @@ function NavbarMobile({ open, setOpen, navigation, classNames }) {
 
                             <ul className="mt-2 space-y-1 px-4">
                               {section.items.map((item) => (
-                                <li
-                                  key={item.name}
-                                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 hover:text-gray-900"
-                                >
-                                  <span
-                                    href={item.href}
-                                    className="-m-2 block p-2 text-gray-500"
+                                <Link to={`${item.name.split(" ").join("")}/`}>
+                                  <li
+                                    key={item.name}
+                                    className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 hover:text-gray-900"
                                   >
-                                    {item.name}
-                                  </span>
-                                </li>
+                                    <span
+                                      href={item.href}
+                                      className="-m-2 block p-2 text-gray-500"
+                                    >
+                                      {item.name}
+                                    </span>
+                                  </li>
+                                </Link>
                               ))}
                             </ul>
                           </details>
@@ -117,12 +127,11 @@ function NavbarMobile({ open, setOpen, navigation, classNames }) {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <a
-                        href={page.href}
-                        className="-m-2 block p-2 font-medium text-gray-900"
-                      >
-                        {page.name}
-                      </a>
+                      <Link to={`pages/${page.name}/`}>
+                        <span className="-m-2 block p-2 font-medium text-gray-900">
+                          {page.name}
+                        </span>
+                      </Link>
                     </div>
                   ))}
                 </div>

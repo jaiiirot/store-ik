@@ -121,7 +121,7 @@ export default function Navbars() {
 
               {/* Logo */}
               <div className="flex lg:ml-0">
-                <Link to={"/"}>
+                <Link to={"/storeik/"}>
                   <span className="sr-only">Indumentaria Kevin</span>
                   <h1 className="font-family-title text-5xl">IK</h1>
                 </Link>

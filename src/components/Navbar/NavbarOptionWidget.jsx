@@ -92,7 +92,7 @@ function OptionWidget({ navigation, classNames }) {
               key={page.name}
               className={`flex items-center text-lg font-medium text-gray-900 hover:text-gray-800 my-navbar--page`}
             >
-              <Link to={`/${page.name}/`}>{page.name}</Link>
+              <Link to={`pages/${page.name}/`}>{page.name}</Link>
             </span>
           ))}
         </div>

@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/storeik/' element={<ItemLayout />}>
+        <Route path='storeik' element={<ItemLayout />}>
           <Route index element={<Home />} />
           <Route path=":itemCategoryTitulo">
             <Route index element={<ItemListContainer />} />
@@ -18,7 +18,7 @@ function App() {
               element={<ItemDetailContainer />}
             />
           </Route>
-          <Route path=":compania/" element={<Compania />} />
+          <Route path="pages/:compania/" element={<Compania />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
