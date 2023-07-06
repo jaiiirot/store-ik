@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ItemLayout />}>
+        <Route path='/storeik/' element={<ItemLayout />}>
           <Route index element={<Home />} />
           <Route path=":itemCategoryTitulo">
             <Route index element={<ItemListContainer />} />
