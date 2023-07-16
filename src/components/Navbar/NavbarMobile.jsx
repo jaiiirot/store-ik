@@ -101,16 +101,13 @@ function NavbarMobile({ open, setOpen, navigation, classNames }) {
                             </summary>
 
                             <ul className="mt-2 space-y-1 px-4">
-                              {section.items.map((item) => (
-                                <Link to={`${item.name.split(" ").join("")}/`}>
-                                  <li
-                                    key={item.name}
-                                    className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 hover:text-gray-900"
-                                  >
-                                    <span
-                                      href={item.href}
-                                      className="-m-2 block p-2 text-gray-500"
-                                    >
+                              {section.items.map((item, i) => (
+                                <Link
+                                  key={i}
+                                  to={`${item.name.split(" ").join("")}/`}
+                                >
+                                  <li className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 hover:text-gray-900">
+                                    <span className="-m-2 block p-2 text-gray-500">
                                       {item.name}
                                     </span>
                                   </li>
@@ -127,8 +124,8 @@ function NavbarMobile({ open, setOpen, navigation, classNames }) {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <Link to={`pages/${page.name}/`}>
-                        <span className="-m-2 block p-2 font-medium text-gray-900">
+                      <Link to={`${page.id}/`}>
+                        <span className="-m-2 block p-2 font-medium text-gray-900 text-xs">
                           {page.name}
                         </span>
                       </Link>

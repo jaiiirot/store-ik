@@ -1,164 +1,44 @@
-import { Carousel } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 function ItemSection() {
-  const callouts = [
-    [
-      {
-        name: "Desk and Office",
-        description: "Work from home accessories",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg",
-        imageAlt:
-          "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-        href: "#",
-      },
-      {
-        name: "Self-Improvement",
-        description: "Journals and note-taking",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg",
-        imageAlt:
-          "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-        href: "#",
-      },
-      {
-        name: "Travel",
-        description: "Daily commute essentials",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg",
-        imageAlt:
-          "Collection of four insulated travel bottles on wooden shelf.",
-        href: "#",
-      },
-      {
-        name: "Desk and Office",
-        description: "Work from home accessories",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg",
-        imageAlt:
-          "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-        href: "#",
-      },
-      {
-        name: "Self-Improvement",
-        description: "Journals and note-taking",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg",
-        imageAlt:
-          "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-        href: "#",
-      },
-    ],
-    [
-      {
-        name: "Travel",
-        description: "Daily commute essentials",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg",
-        imageAlt:
-          "Collection of four insulated travel bottles on wooden shelf.",
-        href: "#",
-      },
-      {
-        name: "Self-Improvement",
-        description: "Journals and note-taking",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg",
-        imageAlt:
-          "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-        href: "#",
-      },
-      {
-        name: "Travel",
-        description: "Daily commute essentials",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg",
-        imageAlt:
-          "Collection of four insulated travel bottles on wooden shelf.",
-        href: "#",
-      },
-      {
-        name: "Desk and Office",
-        description: "Work from home accessories",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg",
-        imageAlt:
-          "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-        href: "#",
-      },
-      {
-        name: "Self-Improvement",
-        description: "Journals and note-taking",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg",
-        imageAlt:
-          "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-        href: "#",
-      },
-    ],
-  ];
-
   return (
-    <div className="bg-gray-100">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="mx-auto max-w-6xl py-16 lg:max-w-none ">
-          <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
+    <section>
+      <div className="w-full ">
+        <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
+          <div className="relative lg:w-full">
+            <div className="relative h-64 sm:h-80 lg:h-full">
+              <img
+                alt="House"
+                src="https://images.pexels.com/photos/6457570/pexels-photo-6457570.jpeg?auto=compress&cs=tinysrgb"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+          </div>
 
-          <div className="mt-6 space-y-12 lg:space-y-0">
-            <Carousel
-              className="overflow-hidden my-carrucel w-full"
-              loop
-              autoplay
-              autoplayDelay={5000}
-            >
-              {callouts.map((count,i) => {
-                return (
-                  <div key={i} className="lg:grid lg:grid-cols-5 lg:gap-x-4 lg:grid-flow-row w-max mx-auto">
-                    {count.map((callout,i) => {
-                      return (
-                        <div
-                          key={i}
-                          className="group relative cursor-pointer"
-                        >
-                          <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-                            <img
-                              alt={callout.alt}
-                              src={callout.imageSrc}
-                              className="absolute inset-0 h-full w-full object-cover"
-                            />
+          <div className="relative flex items-center bg-gray-100">
+            {/* <span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span> */}
 
-                            <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                              <div className="p-4 sm:p-6">
-                                <time
-                                  dateTime="2022-10-10"
-                                  className="block text-xs text-white/90"
-                                >
-                                  $111111
-                                </time>
+            <div className="p-8 sm:p-16 lg:p-24">
+              <h2 className="text-2xl font-bold sm:text-3xl">
+                Indumentaria Kevin
+              </h2>
 
-                                <span href="#">
-                                  <h3 className="mt-0.5 text-lg text-white">
-                                    {callout.name}
-                                  </h3>
-                                </span>
+              <p className="mt-4 text-gray-600">
+                Adéntrate en un mundo donde el estilo se convierte en un
+                lenguaje sin palabras, donde cada prenda es más que una simple
+                pieza de tela. En nuestras colecciones, descubrirás el poder de
+                expresarte a través de la moda, donde cada elección se convierte
+                en un lienzo en blanco para contar tu historia única.
+              </p>
 
-                                <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                                  {callout.description}
-                                </p>
-                              </div>
-                            </div>
-                          </article>
-                        </div>
-                      );
-                    })}
-                  </div>
-                );
-              })}
-            </Carousel>
+              <Link to={`todos`} className="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
+                Productos
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

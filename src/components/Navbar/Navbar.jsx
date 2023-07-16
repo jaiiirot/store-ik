@@ -2,14 +2,14 @@ import { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import CartWidget from "./NavbarCartWidget";
 import NavbarMobile from "./NavbarMobile";
-import OptionWidget from "./NavbarOptionWidget";
+import NavbarOptionWidget from "./NavbarOptionWidget";
 import { Link } from "react-router-dom";
 
 const navigation = {
   categories: [
     {
-      id: "Mujer",
-      name: "Mujer",
+      id: "productos",
+      name: "PRODUCTOS",
       sections: [
         {
           id: "ropa",
@@ -22,56 +22,12 @@ const navigation = {
             { name: "monos y vestidos" },
           ],
         },
-       /*  {
-          id: "accesorios",
-          name: "Accesorios",
-          items: [{ name: "Relojes" }, { name: "Carteras" }],
-        },
-        {
-          id: "marcas",
-          name: "Marcas",
-          items: [{ name: "Nelson completo" }, { name: "A mi manera" }],
-        }, */
       ],
     },
-    /* {
-      id: "Hombre",
-      name: "Hombre",
-      sections: [
-        {
-          id: "ropa",
-          name: "Ropa",
-          items: [
-            { name: "Pantalones" },
-            { name: "Suéteres" },
-            { name: "Camisetas" },
-          ],
-        },
-        {
-          id: "accesorios",
-          name: "Accesorios",
-          items: [
-            { name: "Relojes" },
-            { name: "Gafas de sol" },
-            { name: "Sombreros" },
-          ],
-        },
-        {
-          id: "marcas",
-          name: "Marcas",
-          items: [
-            { name: "Reorganizado" },
-            { name: "Falsificación" },
-            { name: "Nelson completo" },
-          ],
-        },
-      ],
-    }, */
   ],
   pages: [
-    // { name: "Novedades"},
-    { name: "Compania" },
-    { name: "Contacto" },
+    { id: "contacto", name: "CONTACTO" },
+    { id: "politica-de-devolucion", name: "POLITICA DE DEVOLUCIÓN" },
   ],
 };
 
@@ -92,7 +48,7 @@ export default function Navbars() {
       />
 
       <header className="sticky my-navbar z-[100]">
-        <p className="flex h-10 items-center justify-center bg-[#151e31] px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+        <p className="flex h-6 items-center justify-center bg-[#151e31] px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           obten un 30% de descuento
         </p>
 
@@ -100,8 +56,8 @@ export default function Navbars() {
           aria-label="Top"
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
         >
-          <div className="border-b border-gray-200">
-            <div className="flex h-16 items-center justify-between">
+          <div className="border-b border-gray-200 flex flex-col">
+            <div className="flex h-16 items-center justify-center">
               <button
                 type="button"
                 className="rounded-md bg-white p-2 text-gray-400 lg:hidden"
@@ -111,14 +67,6 @@ export default function Navbars() {
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
 
-              {/* Flyout menus */}
-              <OptionWidget
-                open={open}
-                classNames={classNames}
-                setOpen={setOpen}
-                navigation={navigation}
-              />
-
               {/* Logo */}
               <div className="flex lg:ml-0">
                 <Link to={"/storeik/"}>
@@ -126,7 +74,13 @@ export default function Navbars() {
                   <h1 className="font-family-title text-5xl">IK</h1>
                 </Link>
               </div>
-
+              {/* Flyout menus */}
+              <NavbarOptionWidget
+                open={open}
+                classNames={classNames}
+                setOpen={setOpen}
+                navigation={navigation}
+              />
               <CartWidget />
             </div>
           </div>

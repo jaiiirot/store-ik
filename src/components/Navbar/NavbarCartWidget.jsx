@@ -5,14 +5,14 @@ import {
 } from "@heroicons/react/24/solid";
 function CartWidget() {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center ml-4">
       {/* Search */}
       <div className="lg:flex bg-white hidden hover:cursor-pointer rounded-3xl">
         <div className="group -m-2 flex items-center p-2 text-gray-900 hover:text-gray-800 ">
           <input
             type="text"
             placeholder="Buscar"
-            className="outline-none p-1 rounded-3xl"
+            className="outline-none py-1 px-3 rounded-3xl w-96"
           />
           <MagnifyingGlassCircleIcon className="h-6 w-6 " aria-hidden="true" />
         </div>

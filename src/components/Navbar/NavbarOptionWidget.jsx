@@ -1,11 +1,11 @@
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
-function OptionWidget({ navigation, classNames }) {
+function NavbarOptionWidget({ navigation, classNames }) {
   return (
-    <>
+    <div className="m-auto">
       {/* Flyout menus */}
-      <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
+      <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch md:h-12 w-max">
         <div className="flex h-full space-x-8">
           {navigation.categories.map((category) => {
             return (
@@ -18,7 +18,7 @@ function OptionWidget({ navigation, classNames }) {
                           open
                             ? "border-indigo-800 text-gray-900"
                             : "border-transparent text-gray-900 hover:text-gray-800",
-                          "relative z -10 -mb-px flex items-center border-b-2 pt-px text-lg font-medium transition-colors duration-200 ease-out"
+                          "relative z -10 -mb-px flex items-center border-b-2 pt-px text-xs font-medium transition-colors duration-200 ease-out"
                         )}
                       >
                         {category.name}
@@ -90,15 +90,15 @@ function OptionWidget({ navigation, classNames }) {
           {navigation.pages.map((page) => (
             <span
               key={page.name}
-              className={`flex items-center text-lg font-medium text-gray-900 hover:text-gray-800 my-navbar--page`}
+              className={`flex items-center my-navbar--page`}
             >
-              <Link to={`pages/${page.name}/`}>{page.name}</Link>
+              <Link to={`${page.id}/`} className="text-xs font-medium text-gray-900 hover:text-gray-100">{page.name}</Link>
             </span>
           ))}
         </div>
       </Popover.Group>
-    </>
+    </div>
   );
 }
 
-export default OptionWidget;
+export default NavbarOptionWidget;

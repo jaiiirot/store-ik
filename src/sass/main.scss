@@ -3,17 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-$rose-pompadour: #e1869fff;
-$fairy-tale: #eac2cfff;
-$lavender-blush: #eee0e7ff;
-$azure-web: #f2fdffff;
-$slate-gray: #818b9aff;
-$charcoal: rgb(52, 53, 58);
-$oxford-blue: #101935ff;
-$black: #000;
-$font-logo: "Cinzel Decorative", cursive;
-$font-text: "Josefin Sans", sans-serif;
-
+@import "./Utilidades";
 html {
   scroll-behavior: smooth;
 }
@@ -28,33 +18,15 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: $lavender-blush;
-}
+// body {
+//   background: $lavender-blush;
+// }
 
-* img {
-  pointer-events: none;
-}
-
-* .font-family-title {
-  font-family: $font-logo;
-  font-weight: 700;
-}
-
-* .font-family-text{
-  font-family: $font-text;
-}
-
-/* .my-BodyContainer {
-  padding: 0px 1rem;
-} */
+/* Home */
+@import "./Home";
 /* NabVar */
 @import "./NavBar";
-/* ItemSliderContainer */
-@import "./CarrucelContainer";
-/* ItemListContainer */
-@import "./ItemListContainer";
-/* ItemList */
-@import "./ItemList";
 /* ItemCount */
 @import "./Item";
+/* PoliticaDevolucion */
+@import "./PoliticaDevolucion";

@@ -1,18 +1,19 @@
-// import Navbar from "../components/Navbar/Navbar";
-// import { Link } from "react-router-dom";
 import ItemCarrucelContainer from "../components/ItemCarrucelContainer/ItemCarrucelContainer";
 import ItemComment from "../components/ItemComment/ItemComment";
-// import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
 import ItemSection from "../components/ItemSection/ItemSection";
-// import { Outlet } from "react-router-dom";
 export default function Home() {
   return (
-    <div className="App">
-      <div>
+    <div className="home">
+      <div className="home__carrucel">
         <ItemCarrucelContainer />
-        <ItemSection />
-        <ItemComment />
-        {/* <ItemListContainer /> */}
+      </div>
+      <div className="home__main px-4 py-16 sm:px-6 lg:px-8">
+        <div className="home__main-suno">
+          <ItemSection />
+        </div>
+        <div className="home__main-coment">
+          <ItemComment />
+        </div>
       </div>
     </div>
   );

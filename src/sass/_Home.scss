@@ -1,0 +1,9 @@
+.home {
+  height: min-content;
+  &__carrucel {
+    height: 100%;
+  }
+  &__main {
+    height: max-content;
+  }
+}
