@@ -6,7 +6,7 @@ export default function ItemTimeLineContainer({
 }) {
   return (
     <>
-      <li className="target sm:flex-col">
+      <li className="target flex-col">
         <span className={bgColor}>
           <i className={`${icon} text-xl text-${color}`}></i>
         </span>

@@ -2,7 +2,7 @@ import ItemTimeLineContainer from "../components/ItemTimeLine/ItemTimeLineContai
 
 export default function PoliticaDevolucion() {
   return (
-    <div className=" w-full py-4 lg:p-8 h-max">
+    <div className=" w-full py-4 lg:p-8 h-max bg-gray-300">
       <h1 className="font-family-title text-3xl text-center mb-4">
         POLITICAS DE DEVOLUCIÓN
       </h1>

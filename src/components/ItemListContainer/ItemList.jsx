@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
-function ItemList({ catalogoProductos, count}) {
+function ItemList({ catalogoProductos, count, isDetailUrl }) {
   const [product, setProduct] = useState([]);
-  
   useEffect(() => {
     setProduct(catalogoProductos.productos || catalogoProductos);
   }, [catalogoProductos]);
@@ -12,6 +11,7 @@ function ItemList({ catalogoProductos, count}) {
         if (i < count)
           return (
             <Item
+              isDetailUrl={isDetailUrl}
               key={item.id}
               id={item.id}
               imagen={item.img}

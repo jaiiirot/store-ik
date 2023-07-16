@@ -16,7 +16,7 @@ export default function ItemLayout() {
       <Navbars />
       <Outlet />
       <Footer />
-      <div className="fixed bottom-5 right-5">
+      <div className="fixed bottom-5 right-5 z-50">
         <SpeedDial>
           <SpeedDialHandler>
             <IconButton size="lg" className="rounded-full">

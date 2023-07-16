@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-function Item({ id, imagen, titulo, precio, initial, stock }) {
+function Item({ id, imagen, titulo, precio, initial,isDetailUrl }) {
   const [quantity, setQuantity] = useState(initial);
   const increment = () => {
     setQuantity(quantity + 1);
@@ -22,7 +22,7 @@ function Item({ id, imagen, titulo, precio, initial, stock }) {
           </span>
         </div>
 
-        <Link to={`${id}/${titulo}`}>
+        <Link to={`${isDetailUrl}${id}/${titulo}`}>
           <div className="Item__img ">
             <img className="w-full" src={imagen} />
           </div>

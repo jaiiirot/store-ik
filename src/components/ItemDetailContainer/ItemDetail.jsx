@@ -1,7 +1,6 @@
 import { HeartIcon } from "@heroicons/react/20/solid";
 
 export default function ItemDetail({ nombre, precio, img, stock, id }) {
-  console.log(nombre);
   return (
     <section className="text-gray-900  body-font h-max">
       <div className="container px-5 py-4 mx-auto">

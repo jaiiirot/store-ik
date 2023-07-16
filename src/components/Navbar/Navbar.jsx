@@ -60,11 +60,11 @@ export default function Navbars() {
             <div className="flex h-16 items-center justify-center">
               <button
                 type="button"
-                className="rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                className="rounded-md bg-transparent p-2 text-gray-400 lg:hidden"
                 onClick={() => setOpen(true)}
               >
                 <span className="sr-only">Open menu</span>
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                <Bars3Icon className="h-6 w-6 text-gray-900" aria-hidden="true" />
               </button>
 
               {/* Logo */}
