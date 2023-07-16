@@ -10,7 +10,7 @@ function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="storeik" element={<ItemLayout />}>
+          <Route path="store-ik" element={<ItemLayout />}>
             <Route index element={<Home />} />
             <Route path=":itemCategoryTitulo">
               <Route index element={<ItemListContainer />} />
