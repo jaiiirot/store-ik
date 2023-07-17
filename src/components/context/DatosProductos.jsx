@@ -1,9 +1,12 @@
-import React, { createContext } from "react";
+// import React, { createContext } from "react";
+
+
+
 
 export const DataProductosContext = createContext();
 
-export const SolicitarDataProducto = ({ children }) => {
-  return (
-    <DataProductosContext.Provider>{children}</DataProductosContext.Provider>
-  );
-};
+// export const SolicitarDataProvider = ({ children }) => {
+  // return (
+    // <DataProductosContext.Provider value={} >{children}</DataProductosContext.Provider>
+  // );
+// };

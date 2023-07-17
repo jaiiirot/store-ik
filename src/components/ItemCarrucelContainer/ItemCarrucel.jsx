@@ -3,14 +3,7 @@ import { Link } from "react-router-dom";
 function ItemCarrucel({ video }) {
   return (
     <div className="relative h-96 w-full">
-      <video
-        src={video}
-        className="h-96 w-full object-cover"
-        autoPlay
-        muted
-        playsInline
-        loop
-      ></video>
+      <img src={video} className="h-96 w-full object-cover" />
       <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
         <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 lg:pl-32">
           <Typography
@@ -30,12 +23,17 @@ function ItemCarrucel({ video }) {
           </Typography>
           <div className="flex gap-2 flex-wrap">
             <Link to={`todos`}>
-              <Button size="md" color="white" className="font-family-text">
+              <Button size="md" color="white" className="font-family-text rounded-none">
                 Productos
               </Button>
             </Link>
 
-            <Button size="md" color="white" variant="text" className="font-family-text">
+            <Button
+              size="md"
+              color="white"
+              variant="text"
+              className="font-family-text"
+            >
               Carrito
             </Button>
           </div>

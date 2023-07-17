@@ -19,7 +19,7 @@ export default function ItemLayout() {
       <div className="fixed bottom-5 right-5 z-50">
         <SpeedDial>
           <SpeedDialHandler>
-            <IconButton size="lg" className="rounded-full">
+            <IconButton size="lg" className="rounded-full bg-light-blue-900">
               <PlusIcon className="h-5 w-5 transition-transform group-hover:rotate-45" />
             </IconButton>
           </SpeedDialHandler>

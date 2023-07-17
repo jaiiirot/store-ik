@@ -5,14 +5,14 @@ import {
 } from "@heroicons/react/24/solid";
 function CartWidget() {
   return (
-    <div className="flex items-center ml-4">
+    <div className="flex items-center">
       {/* Search */}
       <div className="lg:flex bg-white hidden hover:cursor-pointer rounded-3xl">
         <div className="group -m-2 flex items-center p-2 text-gray-900 hover:text-gray-800 ">
           <input
             type="text"
             placeholder="Buscar"
-            className="outline-none py-1 px-3 rounded-3xl w-96"
+            className="outline-none py-1 px-3 rounded-3xl w-[15rem]"
           />
           <MagnifyingGlassCircleIcon className="h-6 w-6 " aria-hidden="true" />
         </div>
@@ -22,7 +22,7 @@ function CartWidget() {
       <div className="ml-4 flow-root lg:ml-6">
         <div className="group -m-2 flex items-center p-2">
           <HeartIcon
-            className="h-6 w-6 flex-shrink-0 text-gray-900 hover:text-gray-800 cursor-pointer"
+            className="h-4 w-4 md:h-6 md:w-6 flex-shrink-0 text-gray-900 hover:text-gray-800 cursor-pointer"
             aria-hidden="true"
           />
           <span className="ml-2 text-sm font-medium text-gray-900 hover:text-gray-800 cursor-pointer">
@@ -35,7 +35,7 @@ function CartWidget() {
       <div className="ml-4 flow-root lg:ml-6">
         <div className="group -m-2 flex items-center p-2">
           <ShoppingBagIcon
-            className="h-6 w-6 flex-shrink-0 text-gray-900 hover:text-gray-800 cursor-pointer"
+            className="h-4 w-4 md:h-6 md:w-6 flex-shrink-0 text-gray-900 hover:text-gray-800 cursor-pointer"
             aria-hidden="true"
           />
           <span className="ml-2 text-sm font-medium text-gray-900 hover:text-gray-800 cursor-pointer">

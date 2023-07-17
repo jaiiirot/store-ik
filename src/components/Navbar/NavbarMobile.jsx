@@ -107,7 +107,7 @@ function NavbarMobile({ open, setOpen, navigation, classNames }) {
                                   to={`${item.name.split(" ").join("")}/`}
                                 >
                                   <li className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 hover:text-gray-900">
-                                    <span className="-m-2 block p-2 text-gray-500">
+                                    <span className="-m-2 block p-2 font-medium text-gray-900 text-base">
                                       {item.name}
                                     </span>
                                   </li>

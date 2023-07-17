@@ -6,25 +6,30 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import ItemLayout from "./components/ItemLayout/ItemLayout";
 import Contacto from "./pages/Contacto";
 import PoliticaDevolucion from "./pages/PoliticaDevolucion";
+// import { SolicitarDataProvider } from "./components/context/DatosProductos";
+
 function App() {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="store-ik" element={<ItemLayout />}>
-            <Route index element={<Home />} />
-            <Route path=":itemCategoryTitulo">
-              <Route index element={<ItemListContainer />} />
-              <Route
-                path=":itemId/:itemTitulo/"
-                element={<ItemDetailContainer />}
-              />
-            </Route>
-            <Route path="contacto/" element={<Contacto />} />
-            <Route path="politica-de-devolucion/" element={<PoliticaDevolucion />} />
-            <Route path="*" element={<Error />} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="store-ik" element={<ItemLayout />}>
+          <Route index element={<Home />} />
+          <Route path=":itemCategoryTitulo">
+            <Route index element={<ItemListContainer />} />
+            <Route
+              path=":itemId/:itemTitulo/"
+              element={<ItemDetailContainer />}
+            />
           </Route>
-        </Routes>
-      </BrowserRouter>
+          <Route path="contacto/" element={<Contacto />} />
+          <Route
+            path="politica-de-devolucion/"
+            element={<PoliticaDevolucion />}
+          />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

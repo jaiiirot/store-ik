@@ -3,9 +3,9 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 function NavbarOptionWidget({ navigation, classNames }) {
   return (
-    <div className="m-auto">
+    <div className="">
       {/* Flyout menus */}
-      <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch md:h-12 w-max">
+      <Popover.Group className="hidden lg:block lg:self-stretch md:h-12 w-max">
         <div className="flex h-full space-x-8">
           {navigation.categories.map((category) => {
             return (

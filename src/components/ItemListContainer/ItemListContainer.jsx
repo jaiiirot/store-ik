@@ -6,11 +6,14 @@ import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 
-function ItemListContainer({ quantity = 10, isDetail = false }) {
+function ItemListContainer({ quantity = 10, isDetail = false ,isHome = ''}) {
   const [products, setProducts] = useState([]);
   const { itemCategoryTitulo } = useParams();
   const [count, setCount] = useState(quantity);
-  const isDetailUrl = isDetail ? `../` : "";
+  
+  // const isHomeUrl = (itemCategoryTitulo === true)||'todos/' 
+  // console.log(isHomeUrl)
+  const isDetailUrl = isDetail ? `../` : isHome;
 
   useEffect(() => {
     const asyncFunc = itemCategoryTitulo ? getProductsByCategory : getProducts;
