@@ -9,6 +9,8 @@ export const SolicitarDataProvider = ({ children }) => {
     id: idUser,
     state: false,
   });
+  const [finished, setFinished] = useState({});
+
   const [card, setCard] = useState([]);
   const setCardLocalStorage = () => {
     localStorage.setItem(idUser, JSON.stringify(card));
@@ -27,8 +29,6 @@ export const SolicitarDataProvider = ({ children }) => {
   const AddItem = (item, quantity) => {
     if (!isInCard(item.id)) {
       setCard((prev) => [...prev, { ...item, quantity }]);
-    } else {
-      console.log("el producto ya fue agregado");
     }
   };
 
@@ -50,6 +50,8 @@ export const SolicitarDataProvider = ({ children }) => {
         setCardLocalStorage,
         saveInformation,
         setSaveInformation,
+        finished,
+        setFinished,
       }}
     >
       {children}

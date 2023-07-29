@@ -1,11 +1,30 @@
 import { Link, useParams } from "react-router-dom";
 import ItemProgress from "./ItemProgress";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { DataProductosContext } from "../../context/DatosProductos";
 
 export default function ItemCheckoutContainer() {
-  const { saveInformation } = useContext(DataProductosContext);
+  const { saveInformation, finished, setFinished } =
+    useContext(DataProductosContext);
   const { idUsuario } = useParams();
+  const [formComplete, setFormComplete] = useState(false);
+  const [formState, setFormState] = useState({});
+  const onSubmitForm = ({ target }) => {
+    const { name, value } = target;
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
+  const onSubmit = (event) => {
+    event.preventDefault();
+  };
+
+  useEffect(() => {
+    // AGREGAR ITEMS
+    setFormComplete(Object.entries(formState).length === 7);
+    setFinished({ ...formState });
+  }, [formState]);
 
   return (
     <>
@@ -48,7 +67,10 @@ export default function ItemCheckoutContainer() {
           )}
         </div>
 
-        <div className="mt-10 bg-gray-50 px-4 pt-8 lg:mt-0">
+        <form
+          className="mt-10 bg-gray-50 px-4 pt-8 lg:mt-0"
+          onSubmit={onSubmit}
+        >
           <p className="text-xl font-medium">Detalles del pago</p>
           <p className="text-gray-400">
             Complete su pedido proporcionando sus datos de pago.
@@ -69,6 +91,8 @@ export default function ItemCheckoutContainer() {
                     name="email"
                     className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                     placeholder="your.email@gmail.com"
+                    required
+                    onChange={onSubmitForm}
                   />
                   <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                     @
@@ -87,6 +111,8 @@ export default function ItemCheckoutContainer() {
                     name="card-holder"
                     className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                     placeholder="Nombre del titular de la tarjeta"
+                    required
+                    onChange={onSubmitForm}
                   />
                   <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                     =
@@ -108,6 +134,8 @@ export default function ItemCheckoutContainer() {
                       placeholder="xxxx-xxxx-xxxx-xxxx"
                       maxLength="16"
                       minLength="16"
+                      required
+                      onChange={onSubmitForm}
                     />
                     <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                       O
@@ -120,6 +148,8 @@ export default function ItemCheckoutContainer() {
                     placeholder="MM/YY"
                     maxLength="5"
                     minLength="5"
+                    required
+                    onChange={onSubmitForm}
                   />
                   <input
                     type="text"
@@ -128,6 +158,8 @@ export default function ItemCheckoutContainer() {
                     placeholder="CVC"
                     maxLength="4"
                     minLength="3"
+                    required
+                    onChange={onSubmitForm}
                   />
                 </div>
                 <label
@@ -144,6 +176,8 @@ export default function ItemCheckoutContainer() {
                       name="billing-address"
                       className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                       placeholder="Direccion"
+                      required
+                      onChange={onSubmitForm}
                     />
                     <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                       <img
@@ -165,6 +199,8 @@ export default function ItemCheckoutContainer() {
                     name="billing-zip"
                     className="flex-shrink-0 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                     placeholder="ZIP"
+                    required
+                    onChange={onSubmitForm}
                   />
                 </div>
 
@@ -187,16 +223,22 @@ export default function ItemCheckoutContainer() {
                   </div>
                 </div>
               </div>
-              <Link to={`../${idUsuario}/finished/`}>
-                <button className="mt-4 mb-8 w-full rounded-md bg-[#151e31] px-5 py-3 text-sm text-gray-100 transition hover:bg-[#EAC2CF] hover:text-black cursor-pointer">
-                  Realizar pedido
-                </button>
-              </Link>
+              {formComplete ? (
+                <Link to={`../${idUsuario}/finished/`}>
+                  <button className="mt-4 mb-8 w-full rounded-md bg-[#151e31] px-5 py-3 text-sm text-gray-100 transition hover:bg-[#EAC2CF] hover:text-black cursor-pointer">
+                    Realizar pedido
+                  </button>
+                </Link>
+              ) : (
+                <h2 className="text-center bg-rojo">
+                  COMPLETAR TODOS LOS CAMPOS
+                </h2>
+              )}
             </>
           ) : (
             <></>
           )}
-        </div>
+        </form>
       </div>
     </>
   );
