@@ -23,19 +23,25 @@ function ItemCarrucel({ video }) {
           </Typography>
           <div className="flex gap-2 flex-wrap">
             <Link to={`todos`}>
-              <Button size="md" color="white" className="font-family-text rounded-none">
+              <Button
+                size="md"
+                color="white"
+                className="font-family-text rounded-none"
+              >
                 Productos
               </Button>
             </Link>
 
-            <Button
-              size="md"
-              color="white"
-              variant="text"
-              className="font-family-text"
-            >
-              Carrito
-            </Button>
+            <Link to={"card/"}>
+              <Button
+                size="md"
+                color="white"
+                variant="text"
+                className="font-family-text"
+              >
+                Carrito
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

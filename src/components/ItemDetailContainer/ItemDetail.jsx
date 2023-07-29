@@ -1,6 +1,9 @@
-import { useContext } from "react";
+import vid from "../../asset/video/7efs.gif";
+import { useContext, useEffect, useState } from "react";
 import { DataProductosContext } from "../../context/DatosProductos";
 import { useCount } from "../../hook/useCount";
+import { Dialog, DialogBody } from "@material-tailwind/react";
+
 export default function ItemDetail({
   itemId,
   name,
@@ -10,16 +13,23 @@ export default function ItemDetail({
   description,
   idCategory,
 }) {
-  const [quantity, increment, decrement] = useCount(0);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(!open);
+  const [quantity, increment, decrement, resetCount] = useCount(0);
   const { AddItem } = useContext(DataProductosContext);
 
   const AddCardUser = (ID, QUANTITY) => {
-    if (quantity <= 0) return;
+    if (quantity <= 0 || quantity > stock) return resetCount();
     const item = { id: ID, img, name, price };
     AddItem(item, QUANTITY);
   };
+
+  useEffect(() => {
+    resetCount();
+  }, [itemId]);
+
   return (
-    <section className="text-gray-900  body-font h-max">
+    <section className="relative text-gray-900  body-font h-max">
       <div className="container px-5 py-4 mx-auto">
         <div className="text-xs title-font text-gray-800 tracking-widest text-center">
           <h2 className="py-2">{name}</h2>
@@ -75,6 +85,7 @@ export default function ItemDetail({
               <span
                 className="flex ml-auto cursor-pointer select-none text-white bg-[#151E31] border-0 py-2 px-6 focus:outline-none hover:bg-[#0b2a6c] rounded"
                 onClick={() => {
+                  handleOpen();
                   AddCardUser(itemId, quantity);
                 }}
               >
@@ -84,6 +95,17 @@ export default function ItemDetail({
           </div>
         </div>
       </div>
+
+      <Dialog
+        open={open}
+        handler={handleOpen}
+        className="relative bg-white m-4 rounded-lg shadow-2xl text-blue-gray-500 antialiased font-sans text-base font-light leading-relaxed md:w-1/6 lg:w-1/6 2xl:w-2/5 min-w-[25%] md:min-w-[25%] lg:min-w-[30%] 2xl:min-w-[30%] max-w-[30%] md:max-w-[35%] lg:max-w-[25%] 2xl:max-w-[40%] w-8"
+      >
+        <DialogBody className="flex items-center justify-center flex-col">
+          <img src={vid} className="h-32" />
+          <h2 className="text-xl">Se agrego corectamente</h2>
+        </DialogBody>
+      </Dialog>
     </section>
   );
 }

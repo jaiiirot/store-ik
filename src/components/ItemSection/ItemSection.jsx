@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function ItemSection({title, img}) {
+export default function ItemSection({ title, img }) {
   return (
     <div className="h-max">
       <span className="group relative block bg-black">
@@ -12,7 +12,10 @@ export default function ItemSection({title, img}) {
         <div className="relative p-4 sm:p-6 lg:p-8 h-[30rem]">
           <div className="mt-[20rem]">
             <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 text-center">
-              <Link to='' className="text-base text-nigth p-4 bg-white/60 hover:bg-white/70">
+              <Link
+                to={`${title.split(" ").join("-")}/`}
+                className="text-base text-nigth p-4 bg-white/60 hover:bg-white/70"
+              >
                 Ver Catalogo
               </Link>
             </div>

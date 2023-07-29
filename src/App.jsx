@@ -10,6 +10,7 @@ import Crud from "./pages/Crud";
 import { SolicitarDataProvider } from "./context/DatosProductos";
 import Card from "./pages/Card";
 import ItemCheckoutContainer from "./components/Checkout/itemCheckoutContainer";
+import { ItemFinished } from "./components/Checkout/ItemFinished";
 export default function App() {
   return (
     <BrowserRouter>
@@ -35,6 +36,7 @@ export default function App() {
                 path=":idUsuario/checkout/"
                 element={<ItemCheckoutContainer />}
               />
+              <Route path=":idUsuario/finished/" element={<ItemFinished/>}/>
             </Route>
 
             <Route path="crud/" element={<Crud />} />

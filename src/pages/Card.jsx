@@ -22,6 +22,7 @@ export default function Cart() {
     );
     setPriceTotal(total);
   };
+
   useEffect(() => {
     calTotal();
     setSaveInformation({
@@ -30,9 +31,9 @@ export default function Cart() {
       subtotal: priceTotal,
       desc: priceTotal * 0.3,
       total: priceTotal - priceTotal * 0.3,
+      state: priceTotal > 0 ? true : false,
     });
   }, [card, priceTotal]);
-  console.log(priceTotal);
 
   return (
     <main className="px-4 lg:px-20 py-5">

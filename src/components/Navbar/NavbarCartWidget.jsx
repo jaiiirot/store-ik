@@ -3,7 +3,7 @@ import {
   ShoppingBagIcon,
   HeartIcon,
 } from "@heroicons/react/24/solid";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { DataProductosContext } from "../../context/DatosProductos";
 function CartWidget() {
@@ -19,7 +19,7 @@ function CartWidget() {
               aria-hidden="true"
             />
             <span className="ml-2 text-sm font-medium text-gray-900 hover:text-gray-800 cursor-pointer">
-              {card.length}
+              {card.reduce((a, b) => a + b.quantity, 0)}
             </span>
           </div>
         </Link>
