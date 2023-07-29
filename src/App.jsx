@@ -6,31 +6,42 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import ItemLayout from "./components/ItemLayout/ItemLayout";
 import Contacto from "./pages/Contacto";
 import PoliticaDevolucion from "./pages/PoliticaDevolucion";
-// import { SolicitarDataProvider } from "./components/context/DatosProductos";
-
-function App() {
+import Crud from "./pages/Crud";
+import { SolicitarDataProvider } from "./context/DatosProductos";
+import Card from "./pages/Card";
+import ItemCheckoutContainer from "./components/Checkout/itemCheckoutContainer";
+export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="store-ik" element={<ItemLayout />}>
-          <Route index element={<Home />} />
-          <Route path=":itemCategoryTitulo">
-            <Route index element={<ItemListContainer />} />
+      <SolicitarDataProvider>
+        <Routes>
+          <Route path="store-ik" element={<ItemLayout />}>
+            <Route index element={<Home />} />
+            <Route path=":itemCategoryTitulo">
+              <Route index element={<ItemListContainer />} />
+              <Route
+                path=":itemId/:itemTitulo/"
+                element={<ItemDetailContainer />}
+              />
+            </Route>
+            <Route path="contacto/" element={<Contacto />} />
             <Route
-              path=":itemId/:itemTitulo/"
-              element={<ItemDetailContainer />}
+              path="politica-de-devolucion/"
+              element={<PoliticaDevolucion />}
             />
+            <Route path="card/">
+              <Route index element={<Card />} />
+              <Route
+                path=":idUsuario/checkout/"
+                element={<ItemCheckoutContainer />}
+              />
+            </Route>
+
+            <Route path="crud/" element={<Crud />} />
+            <Route path="*" element={<Error />} />
           </Route>
-          <Route path="contacto/" element={<Contacto />} />
-          <Route
-            path="politica-de-devolucion/"
-            element={<PoliticaDevolucion />}
-          />
-          <Route path="*" element={<Error />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </SolicitarDataProvider>
     </BrowserRouter>
   );
 }
-
-export default App;

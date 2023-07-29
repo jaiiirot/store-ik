@@ -1,35 +1,45 @@
 .Item {
   * {
-    transition: all 200ms ease-in-out;
+    transition: all 400ms ease-in;
   }
-  position: relative;
-  border-radius: 2rem;
   width: 100%;
   background: #f5f5f5;
   text-align: center;
   padding: 10px;
   height: min-content;
-  box-shadow: 4px 4px 5px #3434345d;
   &__options {
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    right: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    z-index: 5;
+    gap: 0.5rem;
+    span {
+      background: #151e31;
+      color: #f5f5f5;
+      padding: 4px 8px;
+      border-radius: 1rem;
+      &:hover {
+        background: #3949ab;
+      }
+    }
   }
   &__img {
     width: 100%;
-    height: initial;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
-    border-radius: 20px;
-    box-shadow: .5px .5px 5px #000;
+    img {
+      filter: blur(2px) grayscale(1);
+    }
   }
   &:hover {
+    box-shadow: 4px 4px 5px #3434345d;
     background: #ffffff;
     cursor: pointer;
     transform: translatey(-2px);
     img {
+      filter: blur(0px) grayscale(0);
       z-index: -1;
       transform: scale(1.1);
     }

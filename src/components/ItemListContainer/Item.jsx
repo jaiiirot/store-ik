@@ -1,39 +1,22 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-function Item({ id, imagen, titulo, precio, initial,isDetailUrl }) {
-  const [quantity, setQuantity] = useState(initial);
-  const increment = () => {
-    setQuantity(quantity + 1);
-  };
-
+function Item({ isDetailUrl, id, img, name, price }) {
   return (
     <>
-      <div className="Item normal-case text-black active:bg-pink-500/20">
-        {/* <Link to={`/item/${(titulo).split(' ').join('-')}`}> */}
-        <div className="Item__options">
-          <span
-            className="bg-[#000] hover:bg-white rounded-full hover:text-gray-900 text-white w-8 h-8 text-center leading-9"
-            onClick={increment}
-          >
-            <i className="bx bxs-shopping-bags sm:text-xl"></i>
-          </span>
-          <span className="bg-[#000] hover:bg-white rounded-full hover:text-gray-900 text-white w-8 h-8 text-center leading-9">
-            <i className="bx bxs-heart-circle sm:text-xl"></i>
-          </span>
-        </div>
-
-        <Link to={`${isDetailUrl}${id}/${titulo}`}>
+      <div className="Item normal-case text-black">
+        <Link to={`${isDetailUrl || ""}${id}/${name}`}>
           <div className="Item__img ">
-            <img className="w-full" src={imagen} />
+            <img className="w-full" src={img} />
           </div>
           <div className="flex flex-col h-28 justify-around">
-            <h4 className="text-xs lg:text-sm font-semibold text-start ">
-              {titulo}
-            </h4>
-            <div className="flex gap-4 justify-around items-center">
-              {/* <p className="text-sm">Stock: {stock}</p> */}
-              <h4 className="text-sm font-medium">{precio}</h4>
+            <div className="text-center">
+              <h4 className="text-xs font-semibold ">{name}</h4>
             </div>
+            <div className="flex gap-4 justify-around items-center">
+              <h4 className="text-xs font-medium">${price}</h4>
+            </div>
+            <span className="text-xs py-2 px-4 bg-[#151E31] text-white">
+              Ver Detalles...
+            </span>
           </div>
         </Link>
       </div>

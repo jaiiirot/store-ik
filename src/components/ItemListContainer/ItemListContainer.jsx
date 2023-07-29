@@ -1,35 +1,36 @@
-import {
-  getProducts,
-  getProductsByCategory,
-} from "../../asset/catalogue/catalogue";
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { usePruducts } from "../../config/actionsFirebase";
 
-function ItemListContainer({ quantity = 10, isDetail = false ,isHome = ''}) {
+function ItemListContainer({
+  quantity = 10,
+  isDetail = false,
+  isHome = false,
+}) {
   const [products, setProducts] = useState([]);
   const { itemCategoryTitulo } = useParams();
   const [count, setCount] = useState(quantity);
-  
-  // const isHomeUrl = (itemCategoryTitulo === true)||'todos/' 
-  // console.log(isHomeUrl)
-  const isDetailUrl = isDetail ? `../` : isHome;
 
+  let isProds, isProdsUrl;
+  if (isDetail) isProdsUrl = "../";
+  if (isHome) {
+    isProds = "todos";
+    isProdsUrl = "todos/";
+  }
+  const onProducts = async (CONDICION) => {
+    const prod = await usePruducts(CONDICION);
+    setProducts(prod);
+  };
   useEffect(() => {
-    const asyncFunc = itemCategoryTitulo ? getProductsByCategory : getProducts;
-    asyncFunc(itemCategoryTitulo)
-      .then((response) => {
-        setProducts(response);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+    onProducts(itemCategoryTitulo || isProds);
   }, [itemCategoryTitulo]);
+
   return (
     <div className="bg-white">
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
-        <div className="flex items-baseline justify-between border-b border-gray-200 py-4">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900">
+        <div className="border-b-2 border-gray-200 py-4 text-center">
+          <h1 className="text-4xl font-bold text-gray-900 ">
             {itemCategoryTitulo}
           </h1>
         </div>
@@ -38,14 +39,14 @@ function ItemListContainer({ quantity = 10, isDetail = false ,isHome = ''}) {
           aria-labelledby="products-heading"
           className="pb-24 pt-6 text-center"
         >
-          <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-6">
+          <div className="w-full">
             {/* Product grid */}
-            <div className="lg:col-span-6">
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pb-12">
+            <div className="lg:w-9/12 m-auto">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pb-12 ">
                 <ItemList
                   catalogoProductos={products}
                   count={count}
-                  isDetailUrl={isDetailUrl}
+                  isDetailUrl={isProdsUrl}
                 />
               </div>
             </div>
