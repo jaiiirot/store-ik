@@ -29,6 +29,10 @@ export const SolicitarDataProvider = ({ children }) => {
   const AddItem = (item, quantity) => {
     if (!isInCard(item.id)) {
       setCard((prev) => [...prev, { ...item, quantity }]);
+    } else {
+      const newCard = card.filter((prod) => prod.id !== item.id);
+      setCard([...newCard, { ...item, quantity }]);
+      console.log("producto esta agregado");
     }
   };
 
