@@ -1,6 +1,6 @@
 # Proyecto Ecommerce React
 
-`Clone Tienda De ropa para Indumentaria Kevin`
+`E-commerce De ropa para Indumentaria Kevin`
 
 ## Descripción
 
