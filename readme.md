@@ -31,7 +31,7 @@ Para descargar el proyecto pueden descargar el repositorio en formato zip_
 
 4 - Una vez finalizado, ejecutar:
 
-### `npm run start`
+### `npm run dev`
 
 Se abre una pestaña del navegador en el puerto 5173:
 
