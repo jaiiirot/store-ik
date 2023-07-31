@@ -21,12 +21,12 @@ import {
 
 const firebaseConfig = {
   apiKey: process.env.VITE_API_KEY,
-  authDomain: "indkevin-6b242.firebaseapp.com",
-  projectId: "indkevin-6b242",
-  storageBucket: "indkevin-6b242.appspot.com",
-  messagingSenderId: "827885309023",
-  appId: "1:827885309023:web:d7d3460b7d9b1351f65fea",
-  measurementId: "G-6PPP3WEYYQ",
+  authDomain: process.env.VITE_AUTH_DOMAIN,
+  projectId: process.env.VITE_PORJECT_ID,
+  storageBucket: process.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: process.env.VITE_MESSAGING_SENDER_ID,
+  appId: process.env.VITE_APP_ID,
+  measurementId: process.env.VITE_MEASUREMENT_ID,
 };
 
 // ---------------------------------------------------------------

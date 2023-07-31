@@ -6,7 +6,6 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import ItemLayout from "./components/ItemLayout/ItemLayout";
 import Contacto from "./pages/Contacto";
 import PoliticaDevolucion from "./pages/PoliticaDevolucion";
-import Crud from "./pages/Crud";
 import { SolicitarDataProvider } from "./context/DatosProductos";
 import Card from "./pages/Card";
 import ItemCheckoutContainer from "./components/Checkout/itemCheckoutContainer";
@@ -36,10 +35,8 @@ export default function App() {
                 path=":idUsuario/checkout/"
                 element={<ItemCheckoutContainer />}
               />
-              <Route path=":idUsuario/finished/" element={<ItemFinished/>}/>
+              <Route path=":idUsuario/finished/" element={<ItemFinished />} />
             </Route>
-
-            <Route path="crud/" element={<Crud />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
