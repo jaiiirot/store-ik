@@ -1,6 +1,6 @@
 # Proyecto Ecommerce React
 
-`Clone Tienda De ropa para Indumentaria Kevin`
+`E-commerce De ropa para Indumentaria Kevin`
 
 ## Descripción
 
@@ -31,17 +31,11 @@ Para descargar el proyecto pueden descargar el repositorio en formato zip_
 
 4 - Una vez finalizado, ejecutar:
 
-### `npm run start`
+### `npm run dev`
 
 Se abre una pestaña del navegador en el puerto 5173:
 
 Sino copiar esta URL y pegarla en el navegador: `http://localhost:5173/store-ik/`
-
-### Instalación con git clone 🔧
-
-Se puede clonar el repositorio, ingresando a una terminal y ejecutando: https://github.com/luicabref97/proyecto-react_coderhouse-41100.git
-
-Luego continuar con el paso 3 de la otra forma
 
 ## Despliegue
 
