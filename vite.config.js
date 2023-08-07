@@ -6,7 +6,7 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     plugins: [react()],
-    base: `/store-ik/`,
+    base: `/ecommerce-ik/`,
     define: {
 
       // EJEMPLO_>>_>__>_>>_>
