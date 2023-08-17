@@ -57,7 +57,7 @@ export default function Navbars() {
               </button>
 
               <div className="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <Link to={"/store-ik/"}>
+                <Link to={"/ecommerce-ik/"}>
                   <span className="sr-only">Indumentaria Kevin</span>
                   <h1 className="font-family-title text-5xl">IK</h1>
                 </Link>
