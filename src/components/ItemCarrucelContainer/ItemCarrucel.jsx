@@ -1,10 +1,10 @@
-import { Typography, Button } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+/* import { Typography, Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom"; */
 function ItemCarrucel({ video }) {
   return (
     <div className="relative h-96 w-full">
       <img src={video} className="h-96 w-full object-cover" />
-      <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
+      {/*       <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
         <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 lg:pl-32">
           <Typography
             variant="h1"
@@ -43,8 +43,8 @@ function ItemCarrucel({ video }) {
               </Button>
             </Link>
           </div>
-        </div>
-      </div>
+        </div> 
+      </div>*/}
     </div>
   );
 }

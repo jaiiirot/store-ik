@@ -1,4 +1,4 @@
-import { Popover, Transition } from "@headlessui/react";
+// import { Popover, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getItem } from "../../config/firebase";
@@ -21,7 +21,7 @@ export default function NavbarOptionWidget({ classNames, open, setOpen }) {
 
   return (
     <>
-      <div className="">
+      {/*       <div className="">
         <Popover.Group className="hidden lg:block lg:self-stretch md:h-12 w-max">
           <div className="flex h-full space-x-8">
             <Popover className="flex">
@@ -113,7 +113,7 @@ export default function NavbarOptionWidget({ classNames, open, setOpen }) {
             ))}
           </div>
         </Popover.Group>
-      </div>
+      </div> */}
     </>
   );
 }

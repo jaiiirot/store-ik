@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Bars3Icon } from "@heroicons/react/24/outline";
+// import { Bars3Icon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
 import CartWidget from "./NavbarCartWidget";
-import NavbarMobile from "./NavbarMobile";
+// import NavbarMobile from "./NavbarMobile";
 import NavbarOptionWidget from "./NavbarOptionWidget";
 import { onNavOptions } from "../../config/actionsFirebase";
 function classNames(...classes) {
@@ -26,13 +26,13 @@ export default function Navbars() {
 
   return (
     <>
-      <NavbarMobile
+      {/* <NavbarMobile
         open={open}
         classNames={classNames}
         setOpen={setOpen}
         pages={pages}
         product={product}
-      />
+      /> */}
 
       <p className="flex h-6 items-center justify-center bg-[#151e31] px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
         obten un 30% de descuento
@@ -50,10 +50,10 @@ export default function Navbars() {
                 onClick={() => setOpen(true)}
               >
                 <span className="sr-only">Open menu</span>
-                <Bars3Icon
+                {/* <Bars3Icon
                   className="h-6 w-6 text-gray-900"
                   aria-hidden="true"
-                />
+                /> */}
               </button>
 
               <div className="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">

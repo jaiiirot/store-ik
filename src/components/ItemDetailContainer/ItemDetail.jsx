@@ -1,8 +1,8 @@
-import vid from "../../asset/video/7efs.gif";
+// import vid from "../../asset/video/7efs.gif";
 import { useContext, useEffect, useState } from "react";
 import { DataProductosContext } from "../../context/DatosProductos";
 import { useCount } from "../../hook/useCount";
-import { Dialog, DialogBody } from "@material-tailwind/react";
+// import { Dialog, DialogBody } from "@material-tailwind/react";
 
 export default function ItemDetail({
   itemId,
@@ -96,7 +96,7 @@ export default function ItemDetail({
         </div>
       </div>
 
-      <Dialog
+      {/*       <Dialog
         open={open}
         handler={handleOpen}
         className="relative bg-white m-4 rounded-lg shadow-2xl text-blue-gray-500 antialiased font-sans text-base font-light leading-relaxed md:w-1/6 lg:w-1/6 2xl:w-2/5 min-w-[25%] md:min-w-[25%] lg:min-w-[30%] 2xl:min-w-[30%] max-w-[30%] md:max-w-[35%] lg:max-w-[25%] 2xl:max-w-[40%] w-8"
@@ -105,7 +105,7 @@ export default function ItemDetail({
           <img src={vid} className="h-32" />
           <h2 className="text-xl">Se agrego corectamente</h2>
         </DialogBody>
-      </Dialog>
+      </Dialog> */}
     </section>
   );
 }

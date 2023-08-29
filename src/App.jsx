@@ -15,7 +15,7 @@ export default function App() {
     <BrowserRouter>
       <SolicitarDataProvider>
         <Routes>
-          <Route path="ecommerce-ik" element={<ItemLayout />}>
+          <Route path="/" element={<ItemLayout />}>
             <Route index element={<Home />} />
             <Route path=":itemCategoryTitulo">
               <Route index element={<ItemListContainer />} />

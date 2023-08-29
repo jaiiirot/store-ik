@@ -1,14 +1,14 @@
 import { Outlet } from "react-router-dom";
 import Navbars from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import {
+/* import {
   IconButton,
   SpeedDial,
   SpeedDialHandler,
   SpeedDialContent,
   SpeedDialAction,
 } from "@material-tailwind/react";
-import { PlusIcon } from "@heroicons/react/24/outline";
+import { PlusIcon } from "@heroicons/react/24/outline"; */
 
 export default function ItemLayout() {
   return (
@@ -17,7 +17,7 @@ export default function ItemLayout() {
       <Outlet />
       <Footer />
       <div className="fixed bottom-5 right-5 z-50">
-        <SpeedDial>
+        {/*         <SpeedDial>
           <SpeedDialHandler>
             <IconButton size="lg" className="rounded-full bg-light-blue-900">
               <PlusIcon className="h-5 w-5 transition-transform group-hover:rotate-45" />
@@ -40,7 +40,7 @@ export default function ItemLayout() {
               </a>
             </SpeedDialAction>
           </SpeedDialContent>
-        </SpeedDial>
+        </SpeedDial> */}
       </div>
     </div>
   );
