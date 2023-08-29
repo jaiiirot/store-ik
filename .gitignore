@@ -26,6 +26,4 @@ dist-ssr
 package-lock.json
 
 # variables de entorno (local -> aprender (cofiguracion))
-# .env
-
-𝕂𝕖𝕧𝕚𝕟
+.env
