@@ -18,15 +18,20 @@ html {
   scroll-behavior: smooth;
 }
 
+* main {
+  width: 80%;
+  height: max-content;
+}
+
 // body {
 //   background: $lavender-blush;
 // }
 
 /* Home */
-@import "./Home";
+@import "../pages/Home";
 /* NabVar */
-@import "./NavBar";
+@import "../components/Navbar/NavBar";
 /* ItemCount */
 @import "./Item";
 /* PoliticaDevolucion */
-@import "./PoliticaDevolucion";
+@import "../pages/PoliticaDevolucion";

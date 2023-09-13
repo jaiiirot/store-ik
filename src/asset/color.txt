@@ -1,0 +1,7 @@
+https://coolors.co/fefefe-902620-800700-400400-050505
+
+blanco -> FEFEFE
+rojosuave -> 902620
+rojo -> 800700
+bordo -> 400400
+negro -> 050505
