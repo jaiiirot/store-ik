@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
-export const DataProductosContext = createContext({ card: [] });
+export const DataCart = createContext({ card: [] });
 
-export const SolicitarDataProvider = ({ children }) => {
+export const ContextCartUser = ({ children }) => {
   const [idUser, setIdUser] = useState(
     "PrQraF8rNzVF03YyL4iT4nd9eOie0apquCCAeVGJPxeA2YQZ9q"
   );
@@ -9,8 +9,9 @@ export const SolicitarDataProvider = ({ children }) => {
     id: idUser,
     state: false,
   });
-  const [finished, setFinished] = useState({});
 
+  const [finished, setFinished] = useState({});
+        
   const [card, setCard] = useState([]);
   const setCardLocalStorage = () => {
     localStorage.setItem(idUser, JSON.stringify(card));
@@ -41,7 +42,7 @@ export const SolicitarDataProvider = ({ children }) => {
   };
 
   return (
-    <DataProductosContext.Provider
+    <DataCart.Provider
       value={{
         AddItem,
         RemoveItem,
@@ -58,6 +59,6 @@ export const SolicitarDataProvider = ({ children }) => {
       }}
     >
       {children}
-    </DataProductosContext.Provider>
+    </DataCart.Provider>
   );
 };

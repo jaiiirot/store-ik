@@ -1,19 +1,12 @@
-import ItemTimeLineContainer from "../components/ItemTimeLine/ItemTimeLineContainer";
-
-export default function PoliticaDevolucion() {
+export default function Devolucion() {
   return (
-    <div className=" w-full py-4 lg:p-8 h-max bg-gray-300">
-      <h1 className="font-family-title text-3xl text-center mb-4">
+    <section className=" w-full py-4 lg:p-8 h-max bg-gray-200">
+      <h1 className="font-family-title text-3xl text-center mb-2">
         POLITICAS DE DEVOLUCIÓN
       </h1>
       <div className="w-full md:w-3/4 md:m-auto h-max my-politica-dev">
-        <span className="my-politica-dev__line"></span>
         <ul className="m-auto flex flex-col my-politica-dev__options">
-          <ItemTimeLineContainer
-            bgColor="bg-green-100"
-            color="green-500"
-            icon="bx bxs-bell"
-          >
+          <li>
             <h5>1. MOTIVOS DE CAMBIO</h5>
             <p className="text-sm">
               El Usuario tendrá derecho, dentro de los plazos legales, a
@@ -25,12 +18,9 @@ export default function PoliticaDevolucion() {
               &nbsp;&nbsp;d) recepción de prenda equivocada (EJ: modelo, color o
               talle)
             </p>
-          </ItemTimeLineContainer>
-          <ItemTimeLineContainer
-            bgColor="bg-red-100"
-            color="red-700"
-            icon="bx bxs-box"
-          >
+            <hr />
+          </li>
+          <li>
             <h5>2. CONDICIONES PARA EL CAMBIO</h5>
             <p className="text-sm">
               a. El Usuario deberá contactarse para realizar el cambio dentro
@@ -50,12 +40,9 @@ export default function PoliticaDevolucion() {
               Cambio en domicilio: El costo de envío queda a cargo del
               comprador.
             </p>
-          </ItemTimeLineContainer>
-          <ItemTimeLineContainer
-            bgColor="bg-indigo-100"
-            color="indigo-700"
-            icon="bx bxs-file"
-          >
+            <hr />
+          </li>
+          <li>
             <h5>3. PROCESO DE CAMBIO</h5>
             <p className="text-sm">
               Si el Usuario no cumple con las condiciones para el cambio
@@ -67,12 +54,9 @@ export default function PoliticaDevolucion() {
               El valor del producto a cambiar será el precio pagado por el
               Usuario originalmente por el mismo.
             </p>
-          </ItemTimeLineContainer>
-          <ItemTimeLineContainer
-            bgColor="bg-pink-100"
-            color="pink-700"
-            icon="bx bxs-edit"
-          >
+            <hr />
+          </li>
+          <li>
             <h5>4. CAMBIO</h5>
             <p className="text-sm">
               Para realizar un cambio en nuestro local el cliente deberá
@@ -80,9 +64,10 @@ export default function PoliticaDevolucion() {
               recien cuando nosotros le comuniquemos que está listo podrá venir
               a retirarlo.
             </p>
-          </ItemTimeLineContainer>
+            <hr />
+          </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }

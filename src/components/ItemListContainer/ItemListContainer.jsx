@@ -12,6 +12,8 @@ function ItemListContainer({
   const { itemCategoryTitulo } = useParams();
   const [count, setCount] = useState(quantity);
 
+  console.log(itemCategoryTitulo);
+
   let isProds, isProdsUrl;
   if (isDetail) isProdsUrl = "../";
   if (isHome) {
@@ -30,7 +32,7 @@ function ItemListContainer({
     <div className="bg-white">
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="border-b-2 border-gray-200 py-4 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 ">
+          <h1 className="text-4xl font-bold text-gray-900 font-family-title">
             {itemCategoryTitulo}
           </h1>
         </div>
@@ -55,7 +57,7 @@ function ItemListContainer({
             onClick={() => {
               setCount(count + 5);
             }}
-            className="rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 cursor-pointer"
+            className="rounded border border-[#400400] bg-[#400400] px-12 py-3 text-sm font-medium text-white hover:bg-[#800600]  focus:outline-none focus:ring  cursor-pointer"
           >
             Ver mas
           </span>

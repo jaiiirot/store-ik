@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { DataProductosContext } from "../../context/DatosProductos";
+import { DataCart } from "../../context/ContextCart";
 import { useCount } from "../../hook/useCount";
 
 export default function ItemDetail({
@@ -14,7 +14,7 @@ export default function ItemDetail({
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
   const [quantity, increment, decrement, resetCount] = useCount(0);
-  const { AddItem } = useContext(DataProductosContext);
+  const { AddItem } = useContext(DataCart);
 
   const AddCardUser = (ID, QUANTITY) => {
     if (quantity <= 0 || quantity > stock) return resetCount();

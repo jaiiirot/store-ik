@@ -12,7 +12,9 @@ export default function Home() {
           <ItemSectionContainer />
         </div>
         <div className="home__main-product mt-8 text-center">
-          <h2 className="text-2xl md:text-3xl">TODOS NUESTROS PRODUCTOS</h2>
+          <h2 className="font-family-title text-2xl md:text-3xl">
+            TODOS NUESTROS PRODUCTOS
+          </h2>
           <ItemListContainer quantity={6} isHome />
         </div>
       </div>

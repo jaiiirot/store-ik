@@ -1,80 +1,72 @@
 import { useEffect, useState } from "react";
-// import { Bars3Icon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
-
-import CartWidget from "./NavbarCartWidget";
-// import NavbarMobile from "./NavbarMobile";
-import NavbarOptionWidget from "./NavbarOptionWidget";
-import { onNavOptions } from "../../config/actionsFirebase";
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import { getItem } from "../../config/firebase";
+import NavbarWidgets from "./NavbarWidgets";
+import NavbarMobile from "./NavbarMobile";
+import NavbarList from "./NavbarList";
+import logo from "../../asset/image/ico/icon.png";
 
 export default function Navbars() {
-  const [open, setOpen] = useState(false);
+  // const [activeProd, setActiveProd] = useState(false);
+  const [listProd, setListProd] = useState([]);
   const [pages, setPages] = useState([]);
-  const [product, setProduct] = useState([]);
-  async function onFirestore() {
-    const [optionPages, optionSections] = await onNavOptions();
-    setPages(optionPages);
-    setProduct(optionSections);
+  const [open, setOpen] = useState(false);
+  async function onSave() {
+    const data_pages = await getItem("navegation", "pages");
+    setPages(data_pages.pages);
+    setListProd(data_pages.pages[0].items);
   }
-
+  const OPEN_BAR = () => {
+    setOpen(!open);
+  };
   useEffect(() => {
-    onFirestore();
+    onSave();
   }, []);
 
   return (
     <>
-      {/* <NavbarMobile
-        open={open}
-        classNames={classNames}
-        setOpen={setOpen}
-        pages={pages}
-        product={product}
-      /> */}
-
-      <p className="flex h-6 items-center justify-center bg-[#151e31] px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-        obten un 30% de descuento
-      </p>
-      <header className="sticky my-navbar z-[100]">
-        <nav
-          aria-label="Top"
-          className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-        >
-          <div className="border-b border-gray-200 flex flex-col">
-            <div className="flex h-16 items-center justify-between">
-              <button
-                type="button"
-                className="rounded-md bg-transparent p-2 text-gray-400 lg:hidden"
-                onClick={() => setOpen(true)}
+      <header className="sticky my-navbar">
+        <NavbarMobile pages={pages} open={open} />
+        <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="relative flex h-16 items-center justify-between">
+            <div className="flex items-center gap-4">
+              <span
+                className="text-black text-[1.25rem] cursor-pointer sm:hidden"
+                onClick={OPEN_BAR}
               >
-                <span className="sr-only">Open menu</span>
-                {/* <Bars3Icon
-                  className="h-6 w-6 text-gray-900"
-                  aria-hidden="true"
-                /> */}
-              </button>
-
-              <div className="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <Link to={"/ecommerce-ik/"}>
-                  <span className="sr-only">Indumentaria Kevin</span>
-                  <h1 className="font-family-title text-5xl">IK</h1>
-                </Link>
-              </div>
-
-              <NavbarOptionWidget
-                open={open}
-                classNames={classNames}
-                setOpen={setOpen}
-                pages={pages}
-                product={product}
-              />
-              <CartWidget />
+                {open ? (
+                  <i className="fa-solid fa-xmark"></i>
+                ) : (
+                  <i className="fa-solid fa-bars-staggered "></i>
+                )}
+              </span>
+              <Link to={"/"} className="flex items-center">
+                <img src={logo} alt="" className="h-[50px] hidden sm:block" />
+                <h1 className="font-family-title text-4xl">IK</h1>
+              </Link>
             </div>
+
+            <ul className="my-navbar-list-items text-[1rem] gap-6 hidden sm:flex">
+              {pages.map((pag, i) => {
+                const { id } = pag;
+                return (
+                  <li key={i} className="cursor-pointer">
+                    {id !== "Tienda" ? (
+                      <Link to={`${id.toLowerCase()}`}>{id}</Link>
+                    ) : (
+                      <p onClick={OPEN_BAR}>{id}</p>
+                    )}
+                    <span></span>
+                  </li>
+                );
+              })}
+            </ul>
+
+            <NavbarWidgets />
           </div>
         </nav>
       </header>
+      <NavbarList listProd={listProd} open={open} />
     </>
   );
 }

@@ -6,10 +6,11 @@ function ItemList({ catalogoProductos, count, isDetailUrl }) {
   useEffect(() => {
     setProduct(catalogoProductos.productos || catalogoProductos);
   }, [catalogoProductos]);
-  
+
   return (
     <>
       {product?.map((item, i) => {
+        console.log(item);
         if (i < count)
           return (
             <Item

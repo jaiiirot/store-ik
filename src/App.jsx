@@ -1,21 +1,21 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ContextCartUser } from "./context/ContextCart";
+import { ItemFinished } from "./components/Checkout/ItemFinished";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import ItemLayout from "./components/ItemLayout/ItemLayout";
+import Layout from "./components/Layout/Layout";
 import Contacto from "./pages/Contacto";
-import PoliticaDevolucion from "./pages/PoliticaDevolucion";
-import { SolicitarDataProvider } from "./context/DatosProductos";
-import Card from "./pages/Card";
+import Devolucion from "./pages/Devolucion";
+import Cart from "./pages/Cart";
 import ItemCheckoutContainer from "./components/Checkout/itemCheckoutContainer";
-import { ItemFinished } from "./components/Checkout/ItemFinished";
 export default function App() {
   return (
     <BrowserRouter>
-      <SolicitarDataProvider>
+      <ContextCartUser>
         <Routes>
-          <Route path="/" element={<ItemLayout />}>
+          <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path=":itemCategoryTitulo">
               <Route index element={<ItemListContainer />} />
@@ -25,12 +25,9 @@ export default function App() {
               />
             </Route>
             <Route path="contacto/" element={<Contacto />} />
-            <Route
-              path="politica-de-devolucion/"
-              element={<PoliticaDevolucion />}
-            />
-            <Route path="card/">
-              <Route index element={<Card />} />
+            <Route path="devoluciones/" element={<Devolucion />} />
+            <Route path="cart/">
+              <Route index element={<Cart />} />
               <Route
                 path=":idUsuario/checkout/"
                 element={<ItemCheckoutContainer />}
@@ -40,7 +37,7 @@ export default function App() {
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
-      </SolicitarDataProvider>
+      </ContextCartUser>
     </BrowserRouter>
   );
 }

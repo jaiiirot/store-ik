@@ -2,10 +2,10 @@ import { useParams } from "react-router-dom";
 import camion from "../../asset/video/camion.gif";
 import ItemProgress from "./ItemProgress";
 import { useContext } from "react";
-import { DataProductosContext } from "../../context/DatosProductos";
+import { DataCart } from "../../context/ContextCart";
 export const ItemFinished = () => {
   const { idUsuario } = useParams();
-  const { finished } = useContext(DataProductosContext);
+  const { finished } = useContext(DataCart);
   return (
     <main className="px-4 lg:px-20 py-5">
       <ItemProgress progress={"w-full"} />
