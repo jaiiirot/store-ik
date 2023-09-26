@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 function NavbarList({ listProd, open }) {
-  console.log(open);
   return (
     <section
       className={`${

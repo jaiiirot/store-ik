@@ -3,7 +3,7 @@ import ItemProgress from "./ItemProgress";
 import { useContext, useEffect, useState } from "react";
 import { DataCart } from "../../context/ContextCart";
 
-export default function ItemCheckoutContainer() {
+export default function ItemCheckout() {
   const { saveInformation, setFinished } = useContext(DataCart);
   const { idUsuario } = useParams();
   const [formComplete, setFormComplete] = useState(false);

@@ -9,7 +9,8 @@ import Layout from "./components/Layout/Layout";
 import Contacto from "./pages/Contacto";
 import Devolucion from "./pages/Devolucion";
 import Cart from "./pages/Cart";
-import ItemCheckoutContainer from "./components/Checkout/itemCheckoutContainer";
+import ItemCheckout from "./components/Checkout/ItemCheckout";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -28,10 +29,7 @@ export default function App() {
             <Route path="devoluciones/" element={<Devolucion />} />
             <Route path="cart/">
               <Route index element={<Cart />} />
-              <Route
-                path=":idUsuario/checkout/"
-                element={<ItemCheckoutContainer />}
-              />
+              <Route path=":idUsuario/checkout/" element={<ItemCheckout />} />
               <Route path=":idUsuario/finished/" element={<ItemFinished />} />
             </Route>
             <Route path="*" element={<Error />} />

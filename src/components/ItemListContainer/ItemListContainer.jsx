@@ -12,8 +12,6 @@ function ItemListContainer({
   const { itemCategoryTitulo } = useParams();
   const [count, setCount] = useState(quantity);
 
-  console.log(itemCategoryTitulo);
-
   let isProds, isProdsUrl;
   if (isDetail) isProdsUrl = "../";
   if (isHome) {
