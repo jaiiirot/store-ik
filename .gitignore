@@ -27,3 +27,5 @@ package-lock.json
 
 # variables de entorno (local -> aprender (cofiguracion))
 .env
+*.env
+.env

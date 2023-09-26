@@ -6,10 +6,6 @@ export default defineConfig(({ command, mode }) => {
   return {
     plugins: [react()],
     define: {
-      // EJEMPLO_>>_>__>_>>_>
-      // "process.env.API_KEY": JSON.stringify(
-      //   env.VITE_API_KEY
-      // ),
       "process.env": env,
     },
   };
