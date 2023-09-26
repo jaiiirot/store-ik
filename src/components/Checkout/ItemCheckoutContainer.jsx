@@ -4,7 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import { DataCart } from "../../context/ContextCart";
 
 export default function ItemCheckoutContainer() {
-  const { saveInformation, finished, setFinished } = useContext(DataCart);
+  const { saveInformation, setFinished } = useContext(DataCart);
   const { idUsuario } = useParams();
   const [formComplete, setFormComplete] = useState(false);
   const [formState, setFormState] = useState({});
