@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
+import ItemList from "../ItemList/ItemList";
 import { usePruduct } from "../../config/actionsFirebase";
 
 export default function ItemDetailContainer() {
@@ -21,7 +21,7 @@ export default function ItemDetailContainer() {
         <ItemDetail {...product} itemId={itemId} />
       </div>
       <div className="DetailMore">
-        <ItemListContainer quantity={6} isDetail />
+        <ItemList quantity={6} isDetail />
       </div>
     </>
   );

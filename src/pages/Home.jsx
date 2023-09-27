@@ -1,6 +1,4 @@
-// import ItemCarrucelContainer from "../components/ItemCarrucelContainer/ItemCarrucelContainer";
-// import ItemSectionContainer from "../components/ItemSection/ItemSectionContainer";
-import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
+import ItemList from "../components/ItemList/ItemList";
 export default function Home() {
   return (
     <div className="home">
@@ -13,7 +11,7 @@ export default function Home() {
           <h2 className="font-family-title text-2xl md:text-3xl">
             TODOS NUESTROS PRODUCTOS
           </h2>
-          <ItemListContainer quantity={6} isHome />
+          <ItemList quantity={6} isHome />
         </div>
       </div>
     </div>

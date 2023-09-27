@@ -3,13 +3,14 @@ import { ContextCartUser } from "./context/ContextCart";
 import { ItemFinished } from "./components/Checkout/ItemFinished";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemList from "./components/ItemList/ItemList";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Layout from "./components/Layout/Layout";
 import Contacto from "./pages/Contacto";
 import Devolucion from "./pages/Devolucion";
 import Cart from "./pages/Cart";
 import ItemCheckout from "./components/Checkout/ItemCheckout";
+import Login from "./pages/Login";
 
 export default function App() {
   return (
@@ -19,7 +20,7 @@ export default function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path=":itemCategoryTitulo">
-              <Route index element={<ItemListContainer />} />
+              <Route index element={<ItemList />} />
               <Route
                 path=":itemId/:itemTitulo/"
                 element={<ItemDetailContainer />}
@@ -32,6 +33,7 @@ export default function App() {
               <Route path=":idUsuario/checkout/" element={<ItemCheckout />} />
               <Route path=":idUsuario/finished/" element={<ItemFinished />} />
             </Route>
+            <Route path="login/" element={<Login />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
