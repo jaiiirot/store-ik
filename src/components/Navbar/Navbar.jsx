@@ -7,7 +7,6 @@ import NavbarList from "./NavbarList";
 import logo from "../../asset/image/ico/icon.png";
 
 export default function Navbars() {
-  // const [activeProd, setActiveProd] = useState(false);
   const [listProd, setListProd] = useState([]);
   const [pages, setPages] = useState([]);
   const [open, setOpen] = useState(false);
@@ -27,7 +26,7 @@ export default function Navbars() {
     <>
       <header className="sticky my-navbar">
         <NavbarMobile pages={pages} open={open} />
-        <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-slate-50">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex items-center gap-4">
               <span
@@ -65,8 +64,8 @@ export default function Navbars() {
             <NavbarWidgets />
           </div>
         </nav>
+        <NavbarList listProd={listProd} open={open} />
       </header>
-      <NavbarList listProd={listProd} open={open} />
     </>
   );
 }

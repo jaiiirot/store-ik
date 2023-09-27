@@ -19,8 +19,8 @@ function CartWidget() {
           </span>
         </Link>
       </li>
-      <li>
-        <Link to={`/`}>
+      <li className="cursor-pointer">
+        <Link to={`user/`}>
           <i className="fa-solid fa-user"></i>
         </Link>
       </li>
