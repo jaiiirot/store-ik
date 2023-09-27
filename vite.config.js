@@ -13,3 +13,5 @@ export default defineConfig(({ command, mode }) => {
 
 // ('process.env': env)
 //  --> para importar lo que esta en .env
+// hacer el deploy.
+//  --> firebase deploy
