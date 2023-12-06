@@ -25,7 +25,7 @@ export default function ItemProgress({
 
         <li className={`flex items-center justify-end sm:gap-1.5 ${pago}`}>
           <span className="hidden sm:inline"> Pago </span>
-          <i class="fa-solid fa-credit-card h-6 w-6 sm:h-5 sm:w-5"></i>
+          <i className="fa-solid fa-credit-card h-6 w-6 sm:h-5 sm:w-5"></i>
         </li>
       </ol>
     </div>

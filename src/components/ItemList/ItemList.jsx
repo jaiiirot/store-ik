@@ -1,27 +1,28 @@
 import { usePruducts } from "../../config/actionsFirebase";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Item from "./Item";
 
-function ItemList({ quantity = 10, isDetail = false, isHome = false }) {
-  const [products, setProducts] = useState([]);
-  const { itemCategoryTitulo } = useParams();
-  const [count, setCount] = useState(quantity);
+const LINK = {
+  home: "todos/",
+  detail: "../",
+};
 
-  let isProds, isProdsUrl;
-  if (isDetail) isProdsUrl = "../";
-  if (isHome) {
-    isProds = "todos";
-    isProdsUrl = "todos/";
-  }
-  const onProducts = async (CONDICION) => {
+function ItemList({ quantity = 3, isDetail = false, isHome = false }) {
+  const { itemCategoryTitulo } = useParams();
+  const [products, setProducts] = useState([]);
+  const [category, setCategory] = useState([""]);
+  const [count, setCount] = useState(quantity);
+  async function onProducts(CONDICION) {
     const prod = await usePruducts(CONDICION);
     setProducts(prod);
-  };
+  }
   useEffect(() => {
-    onProducts(itemCategoryTitulo || isProds);
-  }, [itemCategoryTitulo]);
+    if (isHome) setCategory(LINK.home);
+    if (isDetail) setCategory(LINK.detail);
 
+    onProducts(itemCategoryTitulo || "todos");
+  }, [itemCategoryTitulo]);
   return (
     <div className="bg-white">
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
@@ -93,19 +94,20 @@ function ItemList({ quantity = 10, isDetail = false, isHome = false }) {
                 <Item
                   catalogoProductos={products}
                   count={count}
-                  isDetailUrl={isProdsUrl}
+                  category={category}
                 />
               </div>
+
+              <span
+                onClick={() => {
+                  setCount(count + 5);
+                }}
+                className="rounded border border-[#400400] bg-[#800600] px-12 py-3 text-sm font-medium text-white hover:bg-[#400400]  focus:outline-none focus:ring  cursor-pointer"
+              >
+                Ver mas
+              </span>
             </article>
           </section>
-          <span
-            onClick={() => {
-              setCount(count + 5);
-            }}
-            className="rounded border border-[#400400] bg-[#400400] px-12 py-3 text-sm font-medium text-white hover:bg-[#800600]  focus:outline-none focus:ring  cursor-pointer"
-          >
-            Ver mas
-          </span>
         </section>
       </div>
     </div>

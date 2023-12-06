@@ -86,7 +86,7 @@ export default function Cart() {
                   onClick={() => {
                     getCardLocalStorage();
                   }}
-                  className="block rounded bg-[#400400] px-5 py-3 text-sm text-gray-100 transition hover:bg-[#902620] hover:text-black cursor-pointer w-max"
+                  className="block rounded bg-[#800600] px-5 py-3 text-sm text-white transition hover:bg-[#400400] cursor-pointer w-max"
                 >
                   Recuperar mi carrito
                 </span>
@@ -98,7 +98,7 @@ export default function Cart() {
                   onClick={() => {
                     setCardLocalStorage();
                   }}
-                  className="block rounded bg-[#400400] px-5 py-3 text-sm text-gray-100 transition hover:bg-[#902620] cursor-pointer w-max"
+                  className="block rounded bg-[#800600] px-5 py-3 text-sm text-white transition hover:bg-[#400400] cursor-pointer w-max"
                 >
                   Guardar mi carrito
                 </span>
@@ -106,7 +106,7 @@ export default function Cart() {
                   onClick={() => {
                     ClearCard();
                   }}
-                  className="block rounded bg-[#400400] px-5 py-3 text-sm text-gray-100 transition hover:bg-[#902620]  cursor-pointer w-max"
+                  className="block rounded bg-[#800600] px-5 py-3 text-sm text-white transition hover:bg-[#400400] cursor-pointer w-max"
                 >
                   Limpiar mi carrito
                 </span>
@@ -142,7 +142,7 @@ export default function Cart() {
                 {idUser !== "" ? (
                   <Link
                     to={`${idUser}/checkout/`}
-                    className="block rounded bg-[#400400] px-5 py-3 text-sm text-white transition hover:bg-[#800700] cursor-pointer"
+                    className="block rounded bg-[#800600] px-5 py-3 text-sm text-white transition hover:bg-[#400400] cursor-pointer"
                   >
                     Comprar
                   </Link>

@@ -19,7 +19,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path=":itemCategoryTitulo">
+            <Route path=":itemCategoryTitulo/">
               <Route index element={<ItemList />} />
               <Route
                 path=":itemId/:itemTitulo/"

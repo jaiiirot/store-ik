@@ -8,10 +8,12 @@ import { usePruduct } from "../../config/actionsFirebase";
 export default function ItemDetailContainer() {
   const [product, setProduct] = useState([]);
   const { itemId } = useParams();
+
   const onProduct = async () => {
     const prod = await usePruduct(itemId);
     setProduct(prod);
   };
+
   useEffect(() => {
     onProduct();
   }, [itemId]);

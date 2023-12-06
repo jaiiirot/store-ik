@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-function Item({ catalogoProductos, count, isDetailUrl }) {
+function Item({ catalogoProductos, count, category }) {
   const [product, setProduct] = useState([]);
   useEffect(() => {
     setProduct(catalogoProductos.productos || catalogoProductos);
@@ -12,8 +12,8 @@ function Item({ catalogoProductos, count, isDetailUrl }) {
         const { id, img, name, price } = item;
         if (i < count)
           return (
-            <div className="Item normal-case text-black">
-              <Link to={`${isDetailUrl || ""}${id}/${name}`}>
+            <div key={id} className="Item normal-case text-black">
+              <Link to={`${category}${id}/${name}`}>
                 <div className="Item__img ">
                   <img className="w-full" src={img} />
                 </div>

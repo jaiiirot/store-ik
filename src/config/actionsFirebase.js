@@ -8,6 +8,7 @@ const onNavOptions = async () => {
 
 //on firebase product
 const usePruducts = async (CONDICION) => {
+  // console.log(CONDICION);
   if (CONDICION !== "todos") {
     return await getItemsCondition("catalogo", CONDICION);
   } else {

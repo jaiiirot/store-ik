@@ -37,7 +37,7 @@ export default function NavbarMobile({ pages, open }) {
                       {pag.items.map((name, ite) => {
                         return (
                           <li key={ite + 10} className="w-32">
-                            {name}
+                            <Link to={name}>{name}</Link>
                             <hr />
                           </li>
                         );
