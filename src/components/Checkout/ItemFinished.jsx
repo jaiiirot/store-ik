@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import camion from "../../asset/video/camion.gif";
+// import camion from "../../asset/video/camion.gif";
 import ItemProgress from "./ItemProgress";
 import { useContext } from "react";
 import { DataCart } from "../../context/ContextCart";
@@ -11,7 +11,7 @@ export const ItemFinished = () => {
       <ItemProgress progress={"w-full"} />
       <div className="flex justify-center items-center w-full flex-col md:flex-row">
         <div className="h-96 flex items-center justify-center flex-col">
-          <img src={camion} alt="" className="w-64" />
+          {/* <img src={camion} alt="" className="w-64" /> */}
         </div>
         {Object.entries(finished).length === 7 ? (
           <div className="w-full h-96 flex items-center justify-center flex-col">
