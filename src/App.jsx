@@ -19,21 +19,22 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path=":itemCategoryTitulo/">
-              <Route index element={<ItemList />} />
-              <Route
-                path=":itemId/:itemTitulo/"
-                element={<ItemDetailContainer />}
-              />
+            <Route path="/mayorista/" element={<h1>MAYORISTA</h1>} />
+            <Route path="/tienda/" element={<ItemList />}>
+              <Route path=":itemCategoryTitulo/" element={<ItemList />} />
             </Route>
+            <Route
+              path="/producto/:producto/"
+              element={<ItemDetailContainer />}
+            />
             <Route path="contacto/" element={<Contacto />} />
             <Route path="devoluciones/" element={<Devolucion />} />
-            <Route path="cart/">
+            <Route path="carrito/">
               <Route index element={<Cart />} />
               <Route path=":idUsuario/checkout/" element={<ItemCheckout />} />
               <Route path=":idUsuario/finished/" element={<ItemFinished />} />
             </Route>
-            <Route path="login/" element={<Login />} />
+            <Route path="/login/" element={<Login />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
