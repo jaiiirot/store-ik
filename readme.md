@@ -1,5 +1,7 @@
 # Proyecto Ecommerce React
 
+NEW ESTILO https://es.pinterest.com/pin/367536019611614157/
+
 `E-commerce De ropa para Indumentaria Kevin`
 
 ## Descripción
